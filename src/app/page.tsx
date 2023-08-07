@@ -35,7 +35,7 @@ export default function Home() {
       <section className="min-h-screen flex justify-center items-center bg-[url(../assets/abstract.jpg)] bg-cover bg-center">
         <div className="w-[100%] h-[100%] absolute bg-slate-600 opacity-40" />
         <div className="mx-48">
-          <h1 className="text-6xl font-bold relative text-white text-center">Esteves Imóveis 🏘</h1>
+          <h1 className="text-6xl font-bold relative text-white text-center">Esteves Imóveis</h1>
           <br />
           <p className="relative text-white text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, saepe. Exercitationem molestiae magni est, consectetur expedita inventore sit dolore accusantium laboriosam optio quae cupiditate minima quidem perferendis non, illum praesentium.
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
         </div>
         <div className="my-24 mx-32 flex items-center justify-center">
-            <div className="text-8xl mr-4">👨‍👩‍👦</div>
+            <div className="text-8xl mr-4">Teste</div>
             <div className="ml-4">
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.
                 </p>
