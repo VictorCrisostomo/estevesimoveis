@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail, Phone } from "lucide-react"
 
 import whatsapp from "../assets/whatsapp.png"
+import family from "../assets/undraw_family_vg76.png"
 import logo from "../assets/logo.png"
 
 export default function Home() {
@@ -46,7 +47,7 @@ export default function Home() {
       <section className="bg-zinc-200">
         {/* Container */}
         <div className="mt-12 mx-32">
-          <h2 className="text-xl font-semibold text-center text-zinc-600">O que você está procurando?</h2>
+          <h2 className="text-xl font-semibold text-center text-zinc-700 pb-4">O que você está procurando?</h2>
           
           <div className="mt-6 relative overflow-auto">
               <div className="relative flex gap-6 snap-x overflow-x-auto">
@@ -55,7 +56,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-red-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Casas</p>
+                        <p className="ml-5 pt-3 text-lg text-zinc-600">Casas</p>
                       </div>
                     </div>
                   </a>
@@ -65,7 +66,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-blue-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Aluguel de Imóveis</p>
+                        <p className="ml-5 pt-3 text-lg text-zinc-600">Aluguel de Imóveis</p>
                       </div>
                     </div>
                   </a>
@@ -75,7 +76,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-slate-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Terrenos</p>
+                        <p className="ml-5 pt-3 text-lg text-zinc-600">Terrenos</p>
                       </div>
                     </div>
                   </a>
@@ -85,7 +86,7 @@ export default function Home() {
               <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                 <div className="w-48 h-40 bg-orange-800 rounded-t-xl"></div>
                 <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                  <p className="ml-5 pt-3 text-lg">Sítios</p>
+                  <p className="ml-5 pt-3 text-lg text-zinc-600">Sítios</p>
                 </div>
               </div>
             </a>
@@ -94,7 +95,7 @@ export default function Home() {
 
                 <a href="#">
               <div className="snap-start w-48 h-60 rounded-2xl bg-zinc-100 flex items-center justify-center drop-shadow-lg">
-                  <p className="p-2 text-lg text-center">Ver todos os imóveis disponíveis.</p>
+                  <p className="p-2 text-lg text-center text-zinc-600">Ver todos os imóveis disponíveis.</p>
               </div>
             </a>
                 </div>
@@ -107,9 +108,11 @@ export default function Home() {
           </div>
         </div>
         <div className="my-24 mx-32 flex items-center justify-center">
-            <div className="text-8xl mr-4">Teste</div>
+            <div className="mr-4">
+              <Image src={family} alt="" />
+            </div>
             <div className="ml-4">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.
+              <p className="text-zinc-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.
                 </p>
                 </div>
           </div>
@@ -118,7 +121,7 @@ export default function Home() {
       <section className="bg-zinc-200">
         {/* Container */}
         <div className="mx-20">
-          <h2 className="text-xl font-semibold text-center">Destaques</h2>
+          <h2 className="text-xl font-semibold text-center text-zinc-700">Destaques</h2>
 
       {/* Cards Destaques */}
           <div className="my-10 flex justify-around">
@@ -126,22 +129,22 @@ export default function Home() {
               <div className="w-72 h-40 bg-yellow-500 rounded-t-xl"></div>
               <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
                 <div className="mr-7 ml-7 pt-5">
-                <p className=" text-2xl font-semibold">Casas</p>
+                <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
                 <div className="mt-4">
-                  <p className="text-sm font-semibold">Bairro </p>
-                  <p className="text-sm">Rua Loren Ipsum, 000</p>
+                  <p className="text-sm font-semibold text-zinc-700">Bairro </p>
+                  <p className="text-sm text-zinc-600">Rua Loren Ipsum, 000</p>
                 </div>
                 <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm"> 
-                    <Ruler className="mr-1" /> 00²
+                  <p className="flex text-sm text-zinc-600"> 
+                    <Ruler className="mr-1 text-zinc-700" /> 00²
                   </p>
-                  <p className="flex text-sm items-center">
-                    <Bed className="mr-1" /> 2 dorms.
+                  <p className="flex text-sm items-center text-zinc-600">
+                    <Bed className="mr-1 text-zinc-700" /> 2 dorms.
                   </p>
                 </div>
                 <div className="mt-6 flex justify-between items-center">
-                  <p className="text-xl font-bold">R$ 000.000,000</p>
-                  <Heart />
+                  <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
+                  {/* <Heart /> */}
                 </div>
                 </div>
               </div>
@@ -151,22 +154,22 @@ export default function Home() {
               <div className="w-72 h-40 bg-red-700 rounded-t-xl"></div>
               <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
               <div className="mr-7 ml-7 pt-5">
-                <p className=" text-2xl font-semibold">Casas</p>
+                <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
                 <div className="mt-4">
-                  <p className="text-sm font-semibold">Bairro </p>
-                  <p className="text-sm">Rua Loren Ipsum, 000</p>
+                  <p className="text-sm font-semibold text-zinc-700">Bairro </p>
+                  <p className="text-sm text-zinc-600">Rua Loren Ipsum, 000</p>
                 </div>
                 <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm"> 
-                    <Ruler className="mr-1"/> 00²
+                  <p className="flex text-sm text-zinc-600"> 
+                    <Ruler className="mr-1 text-zinc-700"/> 00²
                   </p>
-                  <p className="flex text-sm items-center">
-                    <Bed className="mr-1" /> 2 dorms.
+                  <p className="flex text-sm items-center text-zinc-600">
+                    <Bed className="mr-1 text-zinc-700" /> 2 dorms.
                   </p>
                 </div>
                 <div className="mt-6 flex justify-between items-center">
-                  <p className="text-xl font-bold">R$ 000.000,000</p>
-                  <Heart />
+                  <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
+                  {/* <Heart /> */}
                 </div>
                 </div>
               </div>
@@ -176,22 +179,22 @@ export default function Home() {
               <div className="w-72 h-40 bg-blue-700 rounded-t-xl"></div>
               <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
               <div className="mr-7 ml-7 pt-5">
-                <p className=" text-2xl font-semibold">Casas</p>
+                <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
                 <div className="mt-4">
-                  <p className="text-sm font-semibold">Bairro </p>
-                  <p className="text-sm">Rua Loren Ipsum, 000</p>
+                  <p className="text-sm font-semibold text-zinc-700">Bairro </p>
+                  <p className="text-sm text-zinc-600">Rua Loren Ipsum, 000</p>
                 </div>
                 <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm"> 
-                    <Ruler className="mr-1" /> 00²
+                  <p className="flex text-sm text-zinc-600"> 
+                    <Ruler className="mr-1 text-zinc-700" /> 00²
                   </p>
-                  <p className="flex text-sm items-center">
-                    <Bed className="mr-1" /> 2 dorms.
+                  <p className="flex text-sm items-center text-zinc-600">
+                    <Bed className="mr-1 text-zinc-700" /> 2 dorms.
                   </p>
                 </div>
                 <div className="mt-6 flex justify-between items-center">
-                  <p className="text-xl font-bold">R$ 000.000,000</p>
-                  <Heart />
+                  <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
+                  {/* <Heart /> */}
                 </div>
                 </div>
               </div>
@@ -205,41 +208,41 @@ export default function Home() {
       {/* About */}
       <section className="bg-white min-h-screen">
         <div className="pt-10 mx-32">
-        <h2 className="text-xl font-semibold text-center">Quem somos?</h2>
+        <h2 className="text-xl font-semibold text-center text-zinc-700">Quem somos?</h2>
         <br />
-        <p className="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+        <p className="text-center text-zinc-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
         </div>
         <div className="flex justify-center mt-10">
               <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">Ver mais</button>
         </div>
-        <div className="mt-14 mr-72 ml-72  flex justify-evenly">
-            <div className="transition delay-150 hover:bg-zinc-100 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg">
+        <div className="my-14 mx-80 grid grid-cols-2 justify-items-center">
+            <div className="transition delay-150 hover:bg-gray-100 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg">
                 <div className="mr-7 ml-7 pt-5 justify-center">
                   <div className="flex justify-center">
-                    <CircleDollarSign className="pt-3 w-16 h-16" />
+                    <CircleDollarSign className="pt-3 w-16 h-16 text-indigo-700" />
                   </div>
                   <br />
-                  <p className="text-lg font-semibold text-center">Simulador de Crédito</p>
+                  <p className="text-lg font-semibold text-center text-zinc-700">Simulador de Crédito</p>
                   <br />
-                  <p className="text-sm text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
+                  <p className="text-sm text-center text-zinc-600">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
                   <br />
                   <div className="flex justify-center">
-                    <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded text-xs">Fazer simulação</button>
+                    <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Fazer simulação</button>
                   </div>
                 </div>
             </div>
-            <div className="transition delay-150 hover:bg-zinc-100 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg">
+            <div className="transition delay-150 hover:bg-gray-100 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg">
                 <div className="mr-7 ml-7 pt-5">
                   <div className="flex justify-center">
-                    <Building2 className="pt-3 w-16 h-16" />
+                    <Building2 className="pt-3 w-16 h-16 text-indigo-700" />
                   </div>
                   <br />
-                  <p className="text-lg font-semibold text-center">Quer Vender?</p>
+                  <p className="text-lg font-semibold text-center text-zinc-700">Quer Vender?</p>
                   <br />
-                  <p className="text-sm text-center">Precisando vender o seu Imóvel?</p>
+                  <p className="text-sm text-center text-zinc-600">Precisando vender o seu Imóvel?</p>
                   <br />
                   <div className="flex justify-center pt-5">
-                    <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded text-xs">Clique aqui</button>
+                    <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Clique aqui</button>
                   </div>
                 </div>
             </div>
@@ -249,40 +252,40 @@ export default function Home() {
       <footer>
         <div className="bg-gray-200 px-48 py-10 flex justify-between">
           <div className="flex-col">
-            <p className="font-semibold">Destaques</p>
+            <p className="font-semibold text-zinc-700">Destaques</p>
             <br />
             <a href="#">
-              <p className="py-1">Inicio</p>
+              <p className="py-1 text-zinc-600">Inicio</p>
             </a>
             <a href="#">
-              <p className="py-1">Buscar Imoveis</p>
+              <p className="py-1 text-zinc-600">Buscar Imoveis</p>
             </a>
             <a href="#">
-              <p className="py-1">Quem Somos</p>
+              <p className="py-1 text-zinc-600">Quem Somos</p>
             </a>
             <a href="#">
-              <p className="py-1">Contato</p>
+              <p className="py-1 text-zinc-600">Contato</p>
             </a>
           </div>
           <div className="">
-            <p className="font-semibold">Endereço</p>
+            <p className="font-semibold text-zinc-700">Endereço</p>
             <br />
-            <p>Praça 25 de março, 30 - Centro <br />Canavieiras - BA | 45.860-000</p>
+            <p className="text-zinc-600">Praça 25 de março, 30 - Centro <br />Canavieiras - BA | 45.860-000</p>
             <br />
-            <p className="font-semibold">Horario de funcionamento</p>
+            <p className="font-semibold text-zinc-700">Horário de funcionamento</p>
             <br />
-            <p>Seg à sex: 8hs às 18hs <br />Sabados: 8hs às 13hs</p>
+            <p className="text-zinc-600">Seg à sex: 8hs às 18hs <br />Sábados: 8hs às 13hs</p>
           </div>
           <div className="flex flex-col items-center">
             <Image src={logo} alt="img" className="w-40"/>
             <br />
-            <p className="font-semibold text-center">CRECI 1517 - PJ</p>
+            <p className="font-semibold text-center text-zinc-600">CRECI 1517 - PJ</p>
             <br />
-            <p className="text-xs text-center">Copyright @ 2023 - ESTEVES IMOVEIS <br /> Todos os direitos reservados</p>
+            <p className="text-xs text-center text-zinc-600">Copyright @ 2023 - ESTEVES IMOVEIS <br /> Todos os direitos reservados</p>
           </div>
         </div>
         <div className="bg-zinc-100 py-3">
-          <p className="text-xs text-center">Developed by:</p>
+          <p className="text-xs text-center text-zinc-600">Developed by:</p>
         </div>
       </footer>
     </main>
