@@ -258,7 +258,7 @@ export default function Home() {
           <div className="flex-col">
             <p className="font-semibold text-zinc-700">Destaques</p>
             <br />
-            <Link href={"./page.tsx"}>
+            <Link href={"/"}>
               <p className="py-1 text-zinc-600">Inicio</p>
             </Link>
             <Link href={"./buscar-imoveis"}>
