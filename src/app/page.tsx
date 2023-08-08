@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail, Phone } from "lucide-react"
 
 import whatsapp from "../assets/whatsapp.png"
@@ -10,11 +11,11 @@ export default function Home() {
     <main className="bg-zinc-200">
         <div className="w-[100%] absolute z-10 items-center grid grid-cols-3 justify-items-center">
           {/* Whatsapp */}
-          <div className="">
+          <>
             <a href="" className="px-6 py-1.5 border-2 rounded-full border-zinc-200 text-zinc-100 font-bold flex justify-center items-center">
             (xx) xxxxx-xxxx <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
             </a>
-          </div>
+          </>
           {/* Logo */}
           <div  className=" px-16 py-16 rounded-b-2xl bg-zinc-100 text-zinc-400 font-bold text-2xl">Logo</div>
           {/* Social Medias */}
@@ -51,55 +52,58 @@ export default function Home() {
           
           <div className="mt-6 relative overflow-auto">
               <div className="relative flex gap-6 snap-x overflow-x-auto">
+
                 <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <a href="#">
+                  <Link href={"./casas"}>
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-red-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
                         <p className="ml-5 pt-3 text-lg text-zinc-600">Casas</p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
+
                 <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <a href="#">
+                  <Link href={"./aluguel-de-imoveis"}>
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-blue-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
                         <p className="ml-5 pt-3 text-lg text-zinc-600">Aluguel de Imóveis</p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
+
                 <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <a href="#">
+                  <Link href={"./terrenos"}>
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-slate-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
                         <p className="ml-5 pt-3 text-lg text-zinc-600">Terrenos</p>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                <a href="#">
-              <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
-                <div className="w-48 h-40 bg-orange-800 rounded-t-xl"></div>
-                <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                  <p className="ml-5 pt-3 text-lg text-zinc-600">Sítios</p>
-                </div>
-              </div>
-            </a>
-                </div>
-                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-
-                <a href="#">
-              <div className="snap-start w-48 h-60 rounded-2xl bg-zinc-100 flex items-center justify-center drop-shadow-lg">
-                  <p className="p-2 text-lg text-center text-zinc-600">Ver todos os imóveis disponíveis.</p>
-              </div>
-            </a>
+                  </Link>
                 </div>
 
+                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
+                  <Link href={"./sitios"}>
+                    <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
+                      <div className="w-48 h-40 bg-orange-800 rounded-t-xl"></div>
+                      <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
+                        <p className="ml-5 pt-3 text-lg text-zinc-600">Sítios</p>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+
+                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
+                  <Link href={"./buscar-imoveis"}>
+                    <div className="snap-start w-48 h-60 rounded-2xl bg-zinc-100 flex items-center justify-center drop-shadow-lg">
+                      <p className="p-2 text-lg text-center text-zinc-600">Ver todos os imóveis disponíveis.</p>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -254,18 +258,19 @@ export default function Home() {
           <div className="flex-col">
             <p className="font-semibold text-zinc-700">Destaques</p>
             <br />
-            <a href="#">
+            <Link href={"./page.tsx"}>
               <p className="py-1 text-zinc-600">Inicio</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href={"./buscar-imoveis"}>
               <p className="py-1 text-zinc-600">Buscar Imoveis</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href={"./quem-somos"}>
               <p className="py-1 text-zinc-600">Quem Somos</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href={"./contato"}>
               <p className="py-1 text-zinc-600">Contato</p>
-            </a>
+            </Link>
+
           </div>
           <div className="">
             <p className="font-semibold text-zinc-700">Endereço</p>
