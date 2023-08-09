@@ -39,7 +39,7 @@ export default function BuscarImoveis() {
         <div className="px-16 py-5 flex justify-between items-center">
           <p className="font-bold text-2xl">Logo</p>
           <div className="flex gap-4">
-            <Link href={"../page.tsx"}>
+            <Link href={"/"}>
               <p>Inicio</p>
             </Link>
             <Link href={"../buscar-imoveis"}>
@@ -75,30 +75,32 @@ export default function BuscarImoveis() {
           <p className="text-zinc-800 text-xl font-semibold pb-5">Todos os imoveis</p>
         </div>
         <div className=" grid grid-cols-4 justify-items-center">
-          <div className="mb-10 w-60 h-80 rounded-2xl drop-shadow-lg">
-            <div className="w-60 h-32 bg-blue-700 rounded-t-xl"></div>
-            <div className="w-60 h-48 bg-zinc-100 rounded-b-xl">
-              <div className="px-7 pt-3">
-                <p className=" text-xl font-semibold text-zinc-800">Casas</p>
-                <div className="mt-2">
-                  <p className="text-sm font-semibold text-zinc-700">Bairro </p>
-                  <p className="text-sm">Rua Loren Ipsum, 000</p>
-                </div>
-                <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm"> 
-                    <Ruler className="mr-1 text-zinc-700" /> 00²
-                  </p>
-                  <p className="flex text-sm items-center">
-                    <Bed className="mr-1 text-zinc-700" /> 2 dorms.
-                  </p>
-                </div>
-                <div className="mt-5 flex justify-between items-center">
-                  <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
-                  {/* <Heart /> */}
+          <Link href={"../casas/loren"}>
+            <div className="mb-10 w-60 h-80 rounded-2xl drop-shadow-lg">
+              <div className="w-60 h-32 bg-blue-700 rounded-t-xl"></div>
+              <div className="w-60 h-48 bg-zinc-100 rounded-b-xl">
+                <div className="px-7 pt-3">
+                  <p className=" text-xl font-semibold text-zinc-800">Casas</p>
+                  <div className="mt-2">
+                    <p className="text-sm font-semibold text-zinc-700">Bairro </p>
+                    <p className="text-sm">Rua Loren Ipsum, 000</p>
+                  </div>
+                  <div className="flex mt-3 justify-between items-center">
+                    <p className="flex text-sm"> 
+                      <Ruler className="mr-1 text-zinc-700" /> 00²
+                    </p>
+                    <p className="flex text-sm items-center">
+                      <Bed className="mr-1 text-zinc-700" /> 2 dorms.
+                    </p>
+                  </div>
+                  <div className="mt-5 flex justify-between items-center">
+                    <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
+                    {/* <Heart /> */}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div className="mb-10 w-60 h-80 rounded-2xl drop-shadow-lg">
             <div className="w-60 h-32 bg-blue-700 rounded-t-xl"></div>
