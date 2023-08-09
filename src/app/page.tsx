@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail, Phone } from "lucide-react"
+import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail } from "lucide-react"
 
 import whatsapp from "../assets/whatsapp.png"
 import family from "../assets/undraw_family_vg76.png"
@@ -8,7 +8,7 @@ import logo from "../assets/logo.png"
 
 export default function Home() {
   return (
-    <main className="bg-zinc-200">
+    <main className="bg-zinc-200 text-zinc-600">
         <div className="w-[100%] absolute z-10 items-center grid grid-cols-3 justify-items-center">
           {/* Whatsapp */}
           <>
@@ -58,7 +58,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-red-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg text-zinc-600">Casas</p>
+                        <p className="ml-5 pt-3 text-lg">Casas</p>
                       </div>
                     </div>
                   </Link>
@@ -69,7 +69,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-blue-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg text-zinc-600">Aluguel de Imóveis</p>
+                        <p className="ml-5 pt-3 text-lg">Aluguel de Imóveis</p>
                       </div>
                     </div>
                   </Link>
@@ -80,7 +80,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-slate-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg text-zinc-600">Terrenos</p>
+                        <p className="ml-5 pt-3 text-lg">Terrenos</p>
                       </div>
                     </div>
                   </Link>
@@ -91,7 +91,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-orange-800 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg text-zinc-600">Sítios</p>
+                        <p className="ml-5 pt-3 text-lg">Sítios</p>
                       </div>
                     </div>
                   </Link>
@@ -100,23 +100,19 @@ export default function Home() {
                 <div className="snap-center shrink-0 first:pl-8 last:pr-8">
                   <Link href={"./buscar-imoveis"}>
                     <div className="snap-start w-48 h-60 rounded-2xl bg-zinc-100 flex items-center justify-center drop-shadow-lg">
-                      <p className="p-2 text-lg text-center text-zinc-600">Ver todos os imóveis disponíveis.</p>
+                      <p className="p-2 text-lg text-center">Ver todos os imóveis disponíveis.</p>
                     </div>
                   </Link>
                 </div>
               </div>
             </div>
-
-          <div className=" flex justify-around">
-
-          </div>
         </div>
         <div className="my-24 mx-32 flex items-center justify-center">
             <div className="mr-4">
               <Image src={family} alt="" />
             </div>
             <div className="ml-4">
-              <p className="text-zinc-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.
                 </p>
                 </div>
           </div>
@@ -136,13 +132,13 @@ export default function Home() {
                 <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
                 <div className="mt-4">
                   <p className="text-sm font-semibold text-zinc-700">Bairro </p>
-                  <p className="text-sm text-zinc-600">Rua Loren Ipsum, 000</p>
+                  <p className="text-sm">Rua Loren Ipsum, 000</p>
                 </div>
                 <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm text-zinc-600"> 
+                  <p className="flex text-sm"> 
                     <Ruler className="mr-1 text-zinc-700" /> 00²
                   </p>
-                  <p className="flex text-sm items-center text-zinc-600">
+                  <p className="flex text-sm items-center">
                     <Bed className="mr-1 text-zinc-700" /> 2 dorms.
                   </p>
                 </div>
@@ -161,10 +157,10 @@ export default function Home() {
                 <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
                 <div className="mt-4">
                   <p className="text-sm font-semibold text-zinc-700">Bairro </p>
-                  <p className="text-sm text-zinc-600">Rua Loren Ipsum, 000</p>
+                  <p className="text-sm">Rua Loren Ipsum, 000</p>
                 </div>
                 <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm text-zinc-600"> 
+                  <p className="flex text-sm"> 
                     <Ruler className="mr-1 text-zinc-700"/> 00²
                   </p>
                   <p className="flex text-sm items-center text-zinc-600">
@@ -186,13 +182,13 @@ export default function Home() {
                 <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
                 <div className="mt-4">
                   <p className="text-sm font-semibold text-zinc-700">Bairro </p>
-                  <p className="text-sm text-zinc-600">Rua Loren Ipsum, 000</p>
+                  <p className="text-sm">Rua Loren Ipsum, 000</p>
                 </div>
                 <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm text-zinc-600"> 
+                  <p className="flex text-sm"> 
                     <Ruler className="mr-1 text-zinc-700" /> 00²
                   </p>
-                  <p className="flex text-sm items-center text-zinc-600">
+                  <p className="flex text-sm items-center">
                     <Bed className="mr-1 text-zinc-700" /> 2 dorms.
                   </p>
                 </div>
@@ -214,7 +210,7 @@ export default function Home() {
         <div className="pt-10 mx-32">
         <h2 className="text-xl font-semibold text-center text-zinc-700">Quem somos?</h2>
         <br />
-        <p className="text-center text-zinc-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+        <p className="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
         </div>
         <div className="flex justify-center mt-10">
               <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">Ver mais</button>
@@ -228,7 +224,7 @@ export default function Home() {
                   <br />
                   <p className="text-lg font-semibold text-center text-zinc-700">Simulador de Crédito</p>
                   <br />
-                  <p className="text-sm text-center text-zinc-600">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
+                  <p className="text-sm text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
                   <br />
                   <div className="flex justify-center">
                     <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Fazer simulação</button>
@@ -243,7 +239,7 @@ export default function Home() {
                   <br />
                   <p className="text-lg font-semibold text-center text-zinc-700">Quer Vender?</p>
                   <br />
-                  <p className="text-sm text-center text-zinc-600">Precisando vender o seu Imóvel?</p>
+                  <p className="text-sm text-center">Precisando vender o seu Imóvel?</p>
                   <br />
                   <div className="flex justify-center pt-5">
                     <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Clique aqui</button>
@@ -259,38 +255,38 @@ export default function Home() {
             <p className="font-semibold text-zinc-700">Destaques</p>
             <br />
             <Link href={"/"}>
-              <p className="py-1 text-zinc-600">Inicio</p>
+              <p className="py-1">Inicio</p>
             </Link>
             <Link href={"./buscar-imoveis"}>
-              <p className="py-1 text-zinc-600">Buscar Imoveis</p>
+              <p className="py-1">Buscar Imoveis</p>
             </Link>
             <Link href={"./quem-somos"}>
-              <p className="py-1 text-zinc-600">Quem Somos</p>
+              <p className="py-1">Quem Somos</p>
             </Link>
             <Link href={"./contato"}>
-              <p className="py-1 text-zinc-600">Contato</p>
+              <p className="py-1">Contato</p>
             </Link>
 
           </div>
           <div className="">
             <p className="font-semibold text-zinc-700">Endereço</p>
             <br />
-            <p className="text-zinc-600">Praça 25 de março, 30 - Centro <br />Canavieiras - BA | 45.860-000</p>
+            <p>Praça 25 de março, 30 - Centro <br />Canavieiras - BA | 45.860-000</p>
             <br />
             <p className="font-semibold text-zinc-700">Horário de funcionamento</p>
             <br />
-            <p className="text-zinc-600">Seg à sex: 8hs às 18hs <br />Sábados: 8hs às 13hs</p>
+            <p>Seg à sex: 8hs às 18hs <br />Sábados: 8hs às 13hs</p>
           </div>
           <div className="flex flex-col items-center">
             <Image src={logo} alt="img" className="w-40"/>
             <br />
-            <p className="font-semibold text-center text-zinc-600">CRECI 1517 - PJ</p>
+            <p className="font-semibold text-center">CRECI 1517 - PJ</p>
             <br />
-            <p className="text-xs text-center text-zinc-600">Copyright @ 2023 - ESTEVES IMOVEIS <br /> Todos os direitos reservados</p>
+            <p className="text-xs text-center">Copyright @ 2023 - ESTEVES IMOVEIS <br /> Todos os direitos reservados</p>
           </div>
         </div>
         <div className="bg-zinc-100 py-3">
-          <p className="text-xs text-center text-zinc-600">Developed by:</p>
+          <p className="text-xs text-center">Developed by:</p>
         </div>
       </footer>
     </main>
