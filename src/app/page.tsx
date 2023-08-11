@@ -4,7 +4,8 @@ import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Ma
 
 import whatsapp from "../assets/whatsapp.png"
 import family from "../assets/undraw_family_vg76.png"
-import logo from "../assets/logo.png"
+
+import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -249,46 +250,7 @@ export default function Home() {
         </div>
       </section>
       {/* Footer */ }
-      <footer>
-        <div className="bg-gray-200 px-48 py-10 flex justify-between">
-          <div className="flex-col">
-            <p className="font-semibold text-zinc-700">Destaques</p>
-            <br />
-            <Link href={"/"}>
-              <p className="py-1">Inicio</p>
-            </Link>
-            <Link href={"./buscar-imoveis"}>
-              <p className="py-1">Buscar Imoveis</p>
-            </Link>
-            <Link href={"./quem-somos"}>
-              <p className="py-1">Quem Somos</p>
-            </Link>
-            <Link href={"./contato"}>
-              <p className="py-1">Contato</p>
-            </Link>
-
-          </div>
-          <div className="">
-            <p className="font-semibold text-zinc-700">Endereço</p>
-            <br />
-            <p>Praça 25 de março, 30 - Centro <br />Canavieiras - BA | 45.860-000</p>
-            <br />
-            <p className="font-semibold text-zinc-700">Horário de funcionamento</p>
-            <br />
-            <p>Seg à sex: 8hs às 18hs <br />Sábados: 8hs às 13hs</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image src={logo} alt="img" className="w-40"/>
-            <br />
-            <p className="font-semibold text-center">CRECI 1517 - PJ</p>
-            <br />
-            <p className="text-xs text-center">Copyright @ 2023 - ESTEVES IMOVEIS <br /> Todos os direitos reservados</p>
-          </div>
-        </div>
-        <div className="bg-zinc-100 py-3">
-          <p className="text-xs text-center">Developed by:</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }

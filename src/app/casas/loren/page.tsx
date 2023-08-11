@@ -1,59 +1,17 @@
 import Image from "next/image"
-import Link from "next/link"
-
-import { Instagram, Facebook, Mail, Bed, Car, Ruler } from "lucide-react"
 
 import whatsapp from "../../../assets/whatsapp.png"
+import house from "../../../assets/undraw_House_searching_re_stk8.png"
+import { Bed, Car, Ruler, Phone, Building2, CircleDollarSign } from "lucide-react"
+
+import { Navbar } from "@/components/Navbar"
+import { Footer } from "@/components/Footer"
 
 export default function Casa() {
   return (
-    <main className="bg-zinc-100 text-zinc-600">
-      {/* Hero */}
-      <div className="bg-red-600">
-        <div className="px-16 py-2 flex justify-between">
-          <div>
-            <a href="" className="px-4 py-1 border rounded-full border-red-300 text-red-300 font-semibold flex justify-center items-center">
-            (xx) xxxxx-xxxx <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
-            </a>
-          </div>
-          <div className="flex gap-2">
-            <a href="" className="w-9 h-9 rounded-lg bg-red-500 text-red-300 flex justify-center items-center">
-              <Instagram />
-            </a>
-            <a href="" className="w-9 h-9 rounded-lg bg-red-500 text-red-300 flex justify-center items-center">
-              <Facebook />
-            </a>
-            <a href="" className="w-9 h-9 rounded-lg bg-red-500 text-red-300 flex justify-center items-center">
-              <Mail />
-            </a>
-            {/* <p className="text-2xl text-center text-zinc-100"> | </p>
-            <a href="" className="w-16 h-10 border-2 rounded-lg border-zinc-200 text-zinc-100 flex justify-center items-center font-bold">X</a> */}
-          </div>
-        </div>
-      </div>
+    <main className="bg-zinc-50 text-zinc-600">
       {/* navbar */}
-      <nav className="bg-zinc-300">
-        <div className="px-16 py-5 flex justify-between items-center">
-          <p className="font-bold text-2xl">Logo</p>
-          <div className="flex gap-4">
-            <Link href={"/"}>
-              <p>Inicio</p>
-            </Link>
-            <Link href={"../buscar-imoveis"}>
-              <p>Buscar Imoveis</p>
-            </Link>
-            <Link href={"../quem-somos"}>
-              <p>Quem somos</p>
-            </Link>
-            <Link href={"../contato"}>
-              <p>Contato</p>
-            </Link>
-            <a href="">
-              <p>Blog</p>
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
       {/* header */}
       <div className="px-16 py-4 flex justify-between items-center">
         <div className="">
@@ -81,8 +39,8 @@ export default function Casa() {
             <p className="font-extrabold text-xl text-emerald-600">R$ 000.000,00</p>
           </div>
           <div className="flex items-center gap-2">
-            <div className="bg-zinc-400 rounded-full px-3 py-3">
-              <Bed className="text-zinc-600" />
+            <div className="bg-zinc-300 rounded-full px-3 py-3">
+              <Bed className="text-zinc-500" />
             </div>
             <div className="">
               <p className="font-medium text-sm">Dormitórios</p>
@@ -90,8 +48,8 @@ export default function Casa() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <div className="bg-zinc-400 rounded-full px-3 py-3">
-              <Car className="text-zinc-600" />
+            <div className="bg-zinc-300 rounded-full px-3 py-3">
+              <Car className="text-zinc-500" />
             </div>
             <div className="">
               <p className="font-medium text-sm">Vagas</p>
@@ -99,8 +57,8 @@ export default function Casa() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <div className="bg-zinc-400 rounded-full px-3 py-3">
-              <Ruler className="text-zinc-600" />
+            <div className="bg-zinc-300 rounded-full px-3 py-3">
+              <Ruler className="text-zinc-500" />
             </div>
             <div className="">
               <p className="font-medium text-sm">Área</p>
@@ -111,8 +69,73 @@ export default function Casa() {
       </div>
       <hr className="border-zinc-600 mx-16 mt-2" />
       {/* video */}
+      <div className="my-10 flex justify-center">
+        <iframe className="w-[720px] h-[420px] rounded-xl" src="https://www.youtube.com/embed/3VZFpwlXKpg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+      </div>
+      {/* descrição */}
+      <div className="px-16 pb-12 flex justify-between items-center">
+        <div className="ml-1 max-w-3xl">
+          <p className="font-semibold text-xl">Descrição do imóvel</p>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis nemo incidunt asperiores, ratione quisquam molestiae ut, quod minima soluta eaque atque repellendus cumque architecto quam totam consequuntur distinctio hic?</p>
+        </div>
+        <div className="bg-zinc-50 rounded-xl shadow-xl px-6 py-7">
+          <p className="font-medium text-sm">Valor</p>
+          <p className="font-extrabold text-xl text-emerald-600">R$ 000.000,00</p>
 
+          <hr className="border-zinc-600 mx-1 my-3" />
 
+          <p className="text-base">Gostaria de obter mais informações <br />sobre este imóvel?</p>
+          <br />
+          
+          <div className="flex flex-col">
+          <button className="mb-3 border border-neutral-950 text-neutral-950 text-base py-2 px-4 rounded-lg flex justify-center items-center">
+              <Phone className="w-4 mr-2" /> Ligar
+            </button>
+            <button className="bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg flex justify-center items-center">
+              <Image src={whatsapp} alt="whats" className="w-4 mr-2"/> Conversar por Whatsapp
+            </button>
+          </div>
+
+        </div>
+      </div>
+      {/* Falar com o corretor */}
+      <section className="bg-white">
+        <div className="py-12">
+          <h2 className="text-xl font-semibold text-center text-zinc-700">Precisa de ajuda?</h2>
+        </div>
+        <div className="flex items-center justify-center pb-16">
+        <div className="grid grid-cols-2 justify-items-center gap-10">
+          <div className="transition delay-150 hover:bg-zinc-200 duration-300 w-80 h-96 rounded-2xl drop-shadow-lg flex flex-col justify-center">
+            <div className="mr-7 ml-7 justify-center grid grid-rows-3 items-center gap-2">
+              <div className="flex justify-center">
+                <CircleDollarSign className="w-20 h-20 text-indigo-700" />
+              </div>
+              <p className="text-xl font-semibold text-center text-zinc-700">Simulador de Crédito</p>
+              <p className="text-base text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
+              <div className="flex justify-center">
+                <button className="bg-indigo-700 hover:bg-indigo-500 text-white w-56 py-2 px-4 rounded text-base">Simular financiamento</button>
+              </div>
+            </div>
+          </div>
+          <div className="transition delay-150 hover:bg-zinc-200 duration-300 w-80 h-96 rounded-2xl drop-shadow-lg flex flex-col justify-center">
+            <div className="mr-7 ml-7 justify-center grid grid-rows-3 items-center gap-2">
+              <div className="flex justify-center">
+                <Building2 className="w-20 h-20 text-indigo-700" />
+              </div>
+              <p className="text-xl font-semibold text-center text-zinc-700">Quer vender?</p>
+              <p className="text-base text-center">Está precisando vender seu imóvel</p>
+              <div className="flex justify-center">
+                <button className="bg-indigo-700 hover:bg-indigo-500 text-white w-56 py-2 px-4 rounded text-base">Clique aqui</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        </div>
+ 
+      </section>
+      {/* footer */}
+      <Footer />
     </main>
   )
 }
