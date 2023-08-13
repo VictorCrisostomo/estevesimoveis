@@ -13,7 +13,7 @@ export default function Home() {
         <div className="w-[100%] absolute z-10 items-center grid grid-cols-3 justify-items-center">
           {/* Whatsapp */}
           <>
-            <a href="" className="px-6 py-1.5 border-2 rounded-full border-zinc-200 text-zinc-100 font-bold flex justify-center items-center">
+            <a href="" className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-bold flex justify-center items-center">
             (xx) xxxxx-xxxx <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
             </a>
           </>
@@ -92,7 +92,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-orange-800 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Sítios</p>
+                        <p className="ml-5 pt-3 text-lg">Imóveis Rurais</p>
                       </div>
                     </div>
                   </Link>

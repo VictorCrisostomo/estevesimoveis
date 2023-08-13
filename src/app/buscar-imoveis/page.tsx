@@ -1,62 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import { Bed, Ruler, Instagram, Facebook, Mail } from "lucide-react"
+import { Bed, Ruler } from "lucide-react"
 
-import whatsapp from "../../assets/whatsapp.png"
 import house from "../../assets/undraw_House_searching_re_stk8.png"
 import logo from "../../assets/logo.png"
+
+import { Navbar } from "@/components/Navbar"
 
 export default function BuscarImoveis() {
 
   return (
     <main className="bg-zinc-200 text-zinc-600">
-      {/* Hero */}
-      <div className="bg-red-600">
-        <div className="px-16 py-2 flex justify-between">
-          <div>
-            <a href="" className="px-4 py-1 border rounded-full border-red-300 text-red-300 font-semibold flex justify-center items-center">
-            (xx) xxxxx-xxxx <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
-            </a>
-          </div>
-          <div className="flex gap-2">
-            <a href="" className="w-9 h-9 rounded-lg bg-red-500 text-red-300 flex justify-center items-center">
-              <Instagram />
-            </a>
-            <a href="" className="w-9 h-9 rounded-lg bg-red-500 text-red-300 flex justify-center items-center">
-              <Facebook />
-            </a>
-            <a href="" className="w-9 h-9 rounded-lg bg-red-500 text-red-300 flex justify-center items-center">
-              <Mail />
-            </a>
-            {/* <p className="text-2xl text-center text-zinc-100"> | </p>
-            <a href="" className="w-16 h-10 border-2 rounded-lg border-zinc-200 text-zinc-100 flex justify-center items-center font-bold">X</a> */}
-          </div>
-        </div>
-      </div>
-      {/* navbar */}
-      <nav className="bg-zinc-300">
-        <div className="px-16 py-5 flex justify-between items-center">
-          <p className="font-bold text-2xl">Logo</p>
-          <div className="flex gap-4">
-            <Link href={"/"}>
-              <p>Inicio</p>
-            </Link>
-            <Link href={"../buscar-imoveis"}>
-              <p>Buscar Imoveis</p>
-            </Link>
-            <Link href={"../quem-somos"}>
-              <p>Quem somos</p>
-            </Link>
-            <Link href={"../contato"}>
-              <p>Contato</p>
-            </Link>
-            <a href="">
-              <p>Blog</p>
-            </a>
-          </div>
-        </div>
-      </nav>
+      {/* Navbar */}
+      <Navbar />
       {/* slide */}
       <div className="bg-indigo-700">
         <div className="px-52 py-10 flex items-center justify-center">
