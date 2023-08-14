@@ -7,7 +7,7 @@ export function Ajuda() {
       <h2 className="text-xl font-semibold text-center text-zinc-700">Precisa de ajuda?</h2>
     </div>
     <div className="flex items-center justify-center pb-16">
-    <div className="grid grid-cols-2 justify-items-center gap-10">
+    <div className="grid grid-cols-2 justify-items-center gap-5">
       <div className="transition delay-150 hover:bg-zinc-200 duration-300 w-80 h-96 rounded-2xl drop-shadow-lg flex flex-col justify-center">
         <div className="mr-7 ml-7 justify-center grid grid-rows-3 items-center gap-2">
           <div className="flex justify-center">

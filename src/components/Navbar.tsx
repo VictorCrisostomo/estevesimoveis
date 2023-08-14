@@ -3,6 +3,7 @@ import Link from "next/link"
 
 import { Instagram, Facebook, Mail } from "lucide-react"
 import whatsapp from "../assets/whatsapp.png"
+import logo from "../assets/logo-1.png"
 
 
 export function Navbar() {
@@ -32,10 +33,10 @@ export function Navbar() {
         </div>
       </div>
       {/* navbar */}
-      <nav className="bg-zinc-300">
+      <nav className="bg-zinc-300 text-zinc-600">
         <div className="px-16 py-5 flex justify-between items-center">
           <Link href="/">
-            <p className="font-bold text-2xl">Logo</p>
+            <Image src={logo} alt="" className="w-48" />
           </Link>
           <div className="flex gap-4">
             <Link href={"/"}>

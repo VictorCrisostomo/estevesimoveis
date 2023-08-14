@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import logo from "../assets/logo.png"
+import logo from "../assets/logo-2.png"
+import logoDev from "../assets/logo-dev.png"
 
 export function Footer() {
   return (
@@ -36,8 +37,9 @@ export function Footer() {
           <p className="text-xs text-center">Copyright @ 2023 - ESTEVES IMOVEIS <br /> Todos os direitos reservados</p>
         </div>
       </div>
-      <div className="bg-zinc-100 py-3">
+      <div className="bg-zinc-100 py-3 flex justify-center items-center gap-3">
         <p className="text-xs text-center">Developed by:</p>
+        <Image src={logoDev} alt="img" className="w-20"/>
       </div>
     </footer>
   )

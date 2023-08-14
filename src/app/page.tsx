@@ -3,7 +3,8 @@ import Link from "next/link"
 import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail } from "lucide-react"
 
 import whatsapp from "../assets/whatsapp.png"
-import family from "../assets/undraw_family_vg76.png"
+import family from "../assets/undraw_family_vg76.svg"
+import logo from "../assets/logo-2.png"
 
 import { Footer } from "@/components/Footer"
 
@@ -13,21 +14,23 @@ export default function Home() {
         <div className="w-[100%] absolute z-10 items-center grid grid-cols-3 justify-items-center">
           {/* Whatsapp */}
           <>
-            <a href="" className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-bold flex justify-center items-center">
-            (xx) xxxxx-xxxx <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
+            <a href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site." className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-semibold flex justify-center items-center">
+            (73) 9 9997-3057 <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
             </a>
           </>
           {/* Logo */}
-          <div  className=" px-16 py-16 rounded-b-2xl bg-zinc-100 text-zinc-400 font-bold text-2xl">Logo</div>
+          <div  className=" px-8 py-10 rounded-b-2xl bg-zinc-100">
+            <Image src={logo} alt="" className="w-36"/>
+          </div>
           {/* Social Medias */}
           <div className="flex gap-1">
-            <a href="" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
+            <a href="https://www.instagram.com/estevesimoveis/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
               <Instagram />
             </a>
-            <a href="" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
+            <a href="https://www.facebook.com/estevesimoveis" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
               <Facebook />
             </a>
-            <a href="" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
+            <a href="malito:imobiliariaestevesimoveis@hotmail.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
               <Mail />
             </a>
             {/* <p className="text-2xl text-center text-zinc-100"> | </p>
@@ -109,8 +112,8 @@ export default function Home() {
             </div>
         </div>
         <div className="my-24 mx-32 flex items-center justify-center">
-            <div className="mr-4">
-              <Image src={family} alt="" />
+            <div className="mr-4 flex justify-end">
+              <Image src={family} alt="" className="w-[75%]" />
             </div>
             <div className="ml-4">
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.

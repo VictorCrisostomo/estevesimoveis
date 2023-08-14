@@ -3,10 +3,10 @@ import Link from "next/link"
 
 import { Bed, Ruler } from "lucide-react"
 
-import house from "../../assets/undraw_House_searching_re_stk8.png"
-import logo from "../../assets/logo.png"
+import house from "../../assets/undraw_house_searching_re_stk8.svg"
 
 import { Navbar } from "@/components/Navbar"
+import { Footer } from '@/components/Footer';
 
 export default function BuscarImoveis() {
 
@@ -17,8 +17,8 @@ export default function BuscarImoveis() {
       {/* slide */}
       <div className="bg-indigo-700">
         <div className="px-52 py-10 flex items-center justify-center">
-          <div className="">
-            <Image src={house} alt="" className="w-[100%]" />
+          <div className="flex justify-center">
+            <Image src={house} alt="" className="w-[75%]" />
           </div>
           <div className="">
             <p className="pb-3 font-semibold text-2xl text-zinc-100">Lorem Ipsun</p>
@@ -188,8 +188,8 @@ export default function BuscarImoveis() {
       {/* Falar com o corretor */}
       <section className="min-h-screen bg-zinc-100 flex flex-col justify-center">
             <div className="flex flex-col items-center">
-              <div className="flex justify-center">
-                <Image src={house} alt="" className="w-[70%]" />
+              <div className="pb-10 flex justify-center">
+                <Image src={house} alt="" className="w-[40%]" />
               </div>
               <div className="text-center">
                 <p className="text-2xl font-bold text-zinc-800">Ainda não encontrou o que procura?</p>
@@ -204,46 +204,7 @@ export default function BuscarImoveis() {
             </div>
       </section>
       {/* footer */}
-      <footer>
-        <div className="bg-gray-200 px-48 py-10 flex justify-between">
-          <div className="flex-col">
-            <p className="font-semibold text-zinc-700">Destaques</p>
-            <br />
-            <Link href={"/"}>
-              <p className="py-1">Inicio</p>
-            </Link>
-            <Link href={"./buscar-imoveis"}>
-              <p className="py-1">Buscar Imoveis</p>
-            </Link>
-            <Link href={"./quem-somos"}>
-              <p className="py-1">Quem Somos</p>
-            </Link>
-            <Link href={"./contato"}>
-              <p className="py-1">Contato</p>
-            </Link>
-
-          </div>
-          <div className="">
-            <p className="font-semibold text-zinc-700">Endereço</p>
-            <br />
-            <p>Praça 25 de março, 30 - Centro <br />Canavieiras - BA | 45.860-000</p>
-            <br />
-            <p className="font-semibold text-zinc-700">Horário de funcionamento</p>
-            <br />
-            <p>Seg à sex: 8hs às 18hs <br />Sábados: 8hs às 13hs</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image src={logo} alt="img" className="w-40"/>
-            <br />
-            <p className="font-semibold text-center">CRECI 1517 - PJ</p>
-            <br />
-            <p className="text-xs text-center">Copyright @ 2023 - ESTEVES IMOVEIS <br /> Todos os direitos reservados</p>
-          </div>
-        </div>
-        <div className="bg-zinc-100 py-3">
-          <p className="text-xs text-center">Developed by:</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }
