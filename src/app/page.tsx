@@ -65,9 +65,9 @@ export default function Home() {
       {/*Hero*/}
       <section className="min-h-screen flex justify-center items-center bg-[url(../assets/abstract.jpg)] bg-cover bg-center">
         <div className="mx-8 md:mx-48">
-          <h1 className="text-4xl md:text-6xl font-bold relative text-black text-center">Esteves Imóveis</h1>
+          <h1 className="text-4xl md:text-6xl font-bold relative text-white text-center">Esteves Imóveis</h1>
           <br />
-          <p className="relative text-black text-center">
+          <p className="relative text-white text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, saepe. Exercitationem molestiae magni est, consectetur expedita inventore sit dolore accusantium laboriosam optio quae cupiditate minima quidem perferendis non, illum praesentium.
           </p>
         </div>
