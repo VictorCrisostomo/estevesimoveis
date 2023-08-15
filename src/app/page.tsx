@@ -22,7 +22,6 @@ export default function Home() {
               (73) 9 9997-3057 <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
             </a>
           </div>
-
           <div className="px-2 py-2 rounded-full bg-zinc-100 md:hidden">
             <a
               href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
@@ -77,7 +76,7 @@ export default function Home() {
 
       {/*carousel options*/}
       <section className="bg-zinc-200">
-        <div className="mt-12 md:mx-32">
+        <div className="pt-12 md:mx-32">
           <h2 className="text-xl font-semibold text-center text-zinc-700 pb-4">O que você está procurando?</h2>
           
           <div className="mt-6 relative overflow-auto">
