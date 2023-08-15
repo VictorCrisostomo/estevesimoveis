@@ -7,7 +7,7 @@ import logoDev from "../assets/logo-dev.png"
 export function Footer() {
   return (
     <footer>
-      <div className="bg-gray-200 px-48 py-10 flex justify-between">
+      <div className="bg-gray-200 md:px-48 py-10 flex flex-col text-center gap-2 md:gap-0 md:text-left md:flex-row md:justify-between">
         <div className="flex-col">
           <p className="font-semibold text-zinc-700 pb-3">Destaques</p>
           <Link href={"/"}>

@@ -11,47 +11,73 @@ import { Footer } from "@/components/Footer"
 export default function Home() {
   return (
     <main className="bg-zinc-200 text-zinc-600">
-        <div className="w-[100%] absolute z-10 items-center grid grid-cols-3 justify-items-center">
-          {/* Whatsapp */}
-          <>
-            <a href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site." className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-semibold flex justify-center items-center">
-            (73) 9 9997-3057 <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
+      {/* Navbar */}
+      <div className="w-[100%] absolute z-10 items-center grid grid-cols-3 justify-items-center">
+        {/* Whatsapp */}
+        <div>
+          <div className="hidden md:block">
+            <a
+              href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
+              className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-semibold flex justify-center items-center">
+              (73) 9 9997-3057 <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
             </a>
-          </>
-          {/* Logo */}
-          <div  className=" px-8 py-10 rounded-b-2xl bg-zinc-100">
-            <Image src={logo} alt="" className="w-36"/>
           </div>
-          {/* Social Medias */}
-          <div className="flex gap-1">
-            <a href="https://www.instagram.com/estevesimoveis/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
-              <Instagram />
+
+          <div className="px-2 py-2 rounded-full bg-zinc-100 md:hidden">
+            <a
+              href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
+              className=" text-zinc-100 font-semibold">
+              <Image src={whatsapp} alt="whats" className="w-6"/>
             </a>
-            <a href="https://www.facebook.com/estevesimoveis" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
-              <Facebook />
-            </a>
-            <a href="malito:imobiliariaestevesimoveis@hotmail.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-zinc-100 text-gray-400 flex justify-center items-center">
-              <Mail />
-            </a>
-            {/* <p className="text-2xl text-center text-zinc-100"> | </p>
-            <a href="" className="w-16 h-10 border-2 rounded-lg border-zinc-200 text-zinc-100 flex justify-center items-center font-bold">X</a> */}
           </div>
         </div>
+        {/* Logo */}
+        <div
+        className="px-5 py-8 md:px-8 md:py-10 rounded-b-2xl bg-zinc-100">
+          <Image src={logo} alt="" className="w-36"/>
+        </div>
+        {/* Social Medias */}
+        <div className="flex gap-1 md:gap-2">
+          <a 
+            href="https://www.instagram.com/estevesimoveis/"
+            target="_blank" rel="noopener noreferrer"
+            className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
+            <Instagram className="md:w-6 md:h-6 w-7 h-7"/>
+          </a>
+          <a
+            href="https://www.facebook.com/estevesimoveis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
+            <Facebook className="md:w-6 md:h-6 w-7 h-7"/>
+          </a>
+          <a
+            href="malito:imobiliariaestevesimoveis@hotmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
+            <Mail className="md:w-6 md:h-6 w-7 h-7"/>
+          </a>
+          {/* <p className="text-2xl text-center text-zinc-100"> | </p>
+          <a href="" className="w-16 h-10 border-2 rounded-lg border-zinc-200 text-zinc-100 flex justify-center items-center font-bold">X</a> */}
+        </div>
+      </div>
+
       {/*Hero*/}
       <section className="min-h-screen flex justify-center items-center bg-[url(../assets/abstract.jpg)] bg-cover bg-center">
-        <div className="w-[100%] h-[100%] absolute bg-slate-600 opacity-40" />
-        <div className="mx-48">
-          <h1 className="text-6xl font-bold relative text-white text-center">Esteves Imóveis</h1>
+        <div className="w-[100%] h-[100%] absolute bg-neutral-900 opacity-40" />
+        <div className="mx-8 md:mx-48">
+          <h1 className="text-4xl md:text-6xl font-bold relative text-white text-center">Esteves Imóveis</h1>
           <br />
           <p className="relative text-white text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, saepe. Exercitationem molestiae magni est, consectetur expedita inventore sit dolore accusantium laboriosam optio quae cupiditate minima quidem perferendis non, illum praesentium.
           </p>
         </div>
       </section>
+
       {/*carousel options*/}
       <section className="bg-zinc-200">
-        {/* Container */}
-        <div className="mt-12 mx-32">
+        <div className="mt-12 md:mx-32">
           <h2 className="text-xl font-semibold text-center text-zinc-700 pb-4">O que você está procurando?</h2>
           
           <div className="mt-6 relative overflow-auto">
@@ -109,26 +135,24 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
+          </div>
+        </div>
+        <div className="my-20 mx-8 md:mx-32 md:flex items-center justify-center">
+            <div className="pb-8 md:mr-4 flex justify-center md:justify-end">
+              <Image src={family} alt="" className="w-[50%] md:w-[75%]" />
+            </div>
+            <div className="md:ml-4">
+              <p className="text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.</p>
             </div>
         </div>
-        <div className="my-24 mx-32 flex items-center justify-center">
-            <div className="mr-4 flex justify-end">
-              <Image src={family} alt="" className="w-[75%]" />
-            </div>
-            <div className="ml-4">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.
-                </p>
-                </div>
-          </div>
       </section>
 
+      {/* Cards Destaques */}
       <section className="bg-zinc-200">
-        {/* Container */}
-        <div className="mx-20">
+        <div className="md:mx-20">
           <h2 className="text-xl font-semibold text-center text-zinc-700">Destaques</h2>
 
-      {/* Cards Destaques */}
-          <div className="my-10 flex justify-around">
+          <div className="my-10 flex flex-col items-center gap-8 md:gap-0 md:flex-row md:justify-around">
             <div className="w-72 h-96 rounded-2xl drop-shadow-lg">
               <div className="w-72 h-40 bg-yellow-500 rounded-t-xl"></div>
               <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
@@ -205,21 +229,22 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center my-10">
-              <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">Ver mais</button>
+              <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
           </div>
         </div>
       </section>
+
       {/* About */}
       <section className="bg-white min-h-screen">
-        <div className="pt-10 mx-32">
-        <h2 className="text-xl font-semibold text-center text-zinc-700">Quem somos?</h2>
-        <br />
-        <p className="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+        <div className="pt-10 mx-8 md:mx-32">
+          <h2 className="text-xl font-semibold text-center text-zinc-700">Quem somos?</h2>
+          <br />
+          <p className="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
         </div>
         <div className="flex justify-center mt-10">
-              <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">Ver mais</button>
+              <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
         </div>
-        <div className="my-14 mx-80 grid grid-cols-2 justify-items-center">
+        <div className="mt-14 pb-10 md:pb-0 md:mx-80 gap-5 grid md:grid-cols-2 justify-items-center">
             <div className="transition delay-150 hover:bg-gray-100 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg">
                 <div className="mr-7 ml-7 pt-5 justify-center">
                   <div className="flex justify-center">
@@ -252,6 +277,7 @@ export default function Home() {
             </div>
         </div>
       </section>
+
       {/* Footer */ }
       <Footer />
     </main>
