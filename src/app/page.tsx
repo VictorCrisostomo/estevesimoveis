@@ -79,8 +79,8 @@ export default function Home() {
         <div className="pt-12 md:mx-32">
           <h2 className="text-xl font-semibold text-center text-zinc-700 pb-4">O que você está procurando?</h2>
           
-          <div className="mt-6 relative overflow-auto">
-              <div className="relative flex gap-6 snap-x overflow-x-auto">
+          <div className="mt-6 relative overflow-auto" id="">
+              <div className="relative flex gap-6 snap-x overflow-x-auto scrollCards">
 
                 <div className="snap-center shrink-0 first:pl-8 last:pr-8">
                   <Link href={"./casas"}>
