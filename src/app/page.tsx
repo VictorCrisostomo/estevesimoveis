@@ -64,11 +64,10 @@ export default function Home() {
 
       {/*Hero*/}
       <section className="min-h-screen flex justify-center items-center bg-[url(../assets/abstract.jpg)] bg-cover bg-center">
-        <div className="w-[100%] h-[100%] absolute bg-neutral-900 opacity-40" />
         <div className="mx-8 md:mx-48">
-          <h1 className="text-4xl md:text-6xl font-bold relative text-white text-center">Esteves Imóveis</h1>
+          <h1 className="text-4xl md:text-6xl font-bold relative text-black text-center">Esteves Imóveis</h1>
           <br />
-          <p className="relative text-white text-center">
+          <p className="relative text-black text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, saepe. Exercitationem molestiae magni est, consectetur expedita inventore sit dolore accusantium laboriosam optio quae cupiditate minima quidem perferendis non, illum praesentium.
           </p>
         </div>
@@ -98,7 +97,7 @@ export default function Home() {
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-blue-700 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Aluguel de Imóveis</p>
+                        <p className="px-5 pt-3 text-lg">Aluguel de Imóveis</p>
                       </div>
                     </div>
                   </Link>
