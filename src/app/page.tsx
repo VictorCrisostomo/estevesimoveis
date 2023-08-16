@@ -240,39 +240,36 @@ export default function Home() {
           <p className="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
         </div>
         <div className="flex justify-center mt-10">
-              <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
+          <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
         </div>
-        <div className="mt-14 pb-10 md:pb-0 md:mx-80 gap-5 grid md:grid-cols-2 justify-items-center">
-            <div className="transition delay-150 hover:bg-gray-100 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg">
-                <div className="mr-7 ml-7 pt-5 justify-center">
-                  <div className="flex justify-center">
-                    <CircleDollarSign className="pt-3 w-16 h-16 text-indigo-700" />
-                  </div>
-                  <br />
-                  <p className="text-lg font-semibold text-center text-zinc-700">Simulador de Crédito</p>
-                  <br />
-                  <p className="text-sm text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
-                  <br />
-                  <div className="flex justify-center">
-                    <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Fazer simulação</button>
-                  </div>
+
+        <div className="flex items-center justify-center py-10 gap-10">
+          <div className="grid md:grid-cols-2 justify-items-center gap-5">
+            <div className="transition delay-150 hover:bg-zinc-200 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg flex flex-col justify-center">
+              <div className="mx-7 justify-center grid grid-rows-3 items-center gap-2">
+                <div className="flex justify-center">
+                  <CircleDollarSign className="w-16 h-16 text-indigo-700" />
                 </div>
-            </div>
-            <div className="transition delay-150 hover:bg-gray-100 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg">
-                <div className="mr-7 ml-7 pt-5">
-                  <div className="flex justify-center">
-                    <Building2 className="pt-3 w-16 h-16 text-indigo-700" />
-                  </div>
-                  <br />
-                  <p className="text-lg font-semibold text-center text-zinc-700">Quer Vender?</p>
-                  <br />
-                  <p className="text-sm text-center">Precisando vender o seu Imóvel?</p>
-                  <br />
-                  <div className="flex justify-center pt-5">
-                    <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Clique aqui</button>
-                  </div>
+                <p className="text-lg font-semibold text-center text-zinc-700">Simulador de Crédito</p>
+                <p className="text-sm text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
+                <div className="flex justify-center">
+                  <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Simular financiamento</button>
                 </div>
+              </div>
             </div>
+            <div className="transition delay-150 hover:bg-zinc-200 duration-300 w-64 h-80 rounded-2xl drop-shadow-lg flex flex-col justify-center">
+              <div className="mx-7 justify-center grid grid-rows-3 items-center gap-2">
+                <div className="flex justify-center">
+                  <Building2 className="w-16 h-16 text-indigo-700" />
+                </div>
+                <p className="text-lg font-semibold text-center text-zinc-700">Quer vender ou alugar?</p>
+                <p className="text-sm text-center">Precisando vender ou alugar o seu Imóvel?</p>
+                <div className="flex justify-center">
+                  <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Clique aqui</button>
+                </div>
+              </div>
+            </div>
+          </div>  
         </div>
       </section>
 
