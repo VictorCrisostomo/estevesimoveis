@@ -39,7 +39,8 @@ export default function Home() {
         <div className="flex gap-1 md:gap-2">
           <a 
             href="https://www.instagram.com/estevesimoveis/"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
             className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
             <Instagram className="md:w-6 md:h-6 w-7 h-7"/>
           </a>

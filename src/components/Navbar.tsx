@@ -21,20 +21,19 @@ export function Navbar() {
             </a>
           </div>
           <div className="px-2 py-2 rounded-full bg-indigo-600 hover:bg-indigo-500 md:hidden">
-            <a
-              href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site.">
+            <a href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site.">
               <Image src={whatsapp} alt="whats" className="w-6"/>
             </a>
           </div>
           </div>
           <div className="flex gap-2">
-            <a href="" className="w-9 h-9 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-indigo-300 flex justify-center items-center">
+            <a href="https://www.instagram.com/estevesimoveis/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-indigo-300 flex justify-center items-center">
               <Instagram />
             </a>
-            <a href="" className="w-9 h-9 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-indigo-300 flex justify-center items-center">
+            <a href="https://www.facebook.com/estevesimoveis" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-indigo-300 flex justify-center items-center">
               <Facebook />
             </a>
-            <a href="" className="w-9 h-9 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-indigo-300 flex justify-center items-center">
+            <a href="malito:imobiliariaestevesimoveis@hotmail.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-indigo-300 flex justify-center items-center">
               <Mail />
             </a>
             {/* <p className="text-2xl text-center text-zinc-100"> | </p>
