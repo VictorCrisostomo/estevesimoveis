@@ -11,13 +11,13 @@ export default function Contato() {
   return (
     <main className="text-zinc-600">
       <Navbar />
-      <div className="mx-32 my-8 flex flex-col justify-center">
+      <div className="mx-5 md:mx-32 my-8 flex flex-col justify-center">
         <p className="text-2xl font-semibold text-center text-zinc-700">Lorem Ipsun</p>
         <br />
         <p className="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ad nemo dolor molestiae explicabo, et harum odit accusantium ratione voluptas impedit nulla magni nam perspiciatis? Soluta delectus dicta ratione natus.</p>
       </div>
 
-      <div className="mx-32 my-16 grid grid-cols-2 justify-items-center items-center">
+      <div className="md:mx-32 md:my-16 grid grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-10 md:gap-0">
         <div className="flex flex-col justify-center gap-5">
 
           <div className="flex items-center gap-2">
@@ -40,7 +40,7 @@ export default function Contato() {
                 </a>
               </div>
           </div>
-          <hr />
+          <hr className="border-zinc-500"/>
           <div className="flex items-center gap-2">
               <div className="bg-zinc-300 rounded-full px-2 py-2">
                 <Instagram className="text-zinc-500" />
@@ -73,7 +73,7 @@ export default function Contato() {
           </div>
         </div>
 
-        <div className="">
+        <div className="pb-8 md:pb-0 flex justify-center md:justify-start">
           <Image src={contact} alt="" className='w-[65%]' />
         </div>
       </div>
