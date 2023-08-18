@@ -1,12 +1,16 @@
+
+
 import Image from "next/image"
 import Link from "next/link"
 import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail } from "lucide-react"
+
 
 import whatsapp from "../assets/whatsapp.png"
 import family from "../assets/undraw_family_vg76.svg"
 import logo from "../assets/logo-2.png"
 
 import { Footer } from "@/components/Footer"
+import { SimulacaoModals } from "@/components/SimulacaoModals"
 
 export default function Home() {
   return (
@@ -254,7 +258,8 @@ export default function Home() {
                 <p className="text-lg font-semibold text-center text-zinc-700">Simulador de Crédito</p>
                 <p className="text-sm text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
                 <div className="flex justify-center">
-                  <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Simular financiamento</button>
+                  <SimulacaoModals />
+                  {/* <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Simular financiamento</button> */}
                 </div>
               </div>
             </div>
