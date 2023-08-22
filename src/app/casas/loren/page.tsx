@@ -6,6 +6,7 @@ import { Bed, Car, Ruler, Phone, Home, BoxSelect, HardHat } from "lucide-react"
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { Ajuda } from '@/components/Ajuda';
+import { CarousselHouse } from '@/components/CarousselHouses';
 
 export default function Casa() {
   return (
@@ -32,13 +33,14 @@ export default function Casa() {
         </div>
       </div>
       {/* slides */}
-      <div className="">
+      <CarousselHouse />
+      {/* <div className="">
         <div className="flex justify-between">
           <div className="hidden md:block bg-blue-400 w-[33%] h-96"></div>
           <div className="bg-red-400 w-[100%] h-96"></div>
           <div className="hidden md:block bg-yellow-200 w-[33%] h-96"></div>
         </div>
-      </div>
+      </div> */}
       {/* infos */}
       <div className="px-10 md:px-16 py-4 grid grid-cols-1 gap-5 md:gap-0 md:flex justify-between">
         <div>
