@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-import { Button, Modal, Card } from 'flowbite-react';
+import { Modal } from 'flowbite-react';
 import Image from "next/image";
 
 import * as bbLogoPng from "../assets/bb-logo.png"
@@ -84,7 +84,7 @@ export function SimulacaoModals() {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={() => props.setOpenModal(undefined)}>Fechar</Button>
+          <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded text-xs" onClick={() => props.setOpenModal(undefined)}>Fechar</button>
         </Modal.Footer>
       </Modal>
     </>

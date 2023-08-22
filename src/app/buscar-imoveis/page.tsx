@@ -5,6 +5,8 @@ import house from "../../assets/undraw_house_searching_re_stk8.svg"
 import { Navbar } from "@/components/Navbar"
 import { Footer } from '@/components/Footer';
 import { Card } from '@/components/Cards';
+import { Caroussel } from '@/components/Caroussel';
+// import { Caroussel } from '../../components/Caroussel';
 
 export default function BuscarImoveis() {
 
@@ -13,7 +15,8 @@ export default function BuscarImoveis() {
       {/* Navbar */}
       <Navbar />
       {/* slide */}
-      <div className=" min-w-screen h-44 md:h-80 bg-[url(../assets/banner.jpg)] bg-cover bg-center"/>
+      <Caroussel />
+      {/* <div className=" min-w-screen h-44 md:h-80 bg-[url(../assets/banner.jpg)] bg-cover bg-center"/> */}
       {/* imoveis */}
       <section className="py-10 md:px-24 md:py-20">
         <div className="mx-6">
