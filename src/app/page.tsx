@@ -3,9 +3,9 @@ import Link from "next/link"
 import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail } from "lucide-react"
 
 
-import whatsapp from "../assets/whatsapp.png"
-import family from "../assets/undraw_family_vg76.svg"
-import logo from "../assets/logo-2.png"
+import whatsapp from "@/assets/whatsapp.png"
+import family from "@/assets/undraw_family_vg76.svg"
+import logo from "@/assets/logo-2.png"
 
 import { Footer } from "@/components/Footer"
 import { SimulacaoModals } from "@/components/SimulacaoModals"

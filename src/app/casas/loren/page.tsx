@@ -1,21 +1,40 @@
-import { Navbar } from "@/components/Navbar"
-import { Footer } from "@/components/Footer"
-import { Ajuda } from '@/components/Ajuda';
+'use client'
+import Image from 'next/image';
 
-import { Infos } from '@/components/layout/Infos'
-import { Description } from "@/components/layout/Description"
+import Navbar from "@/components/navbar/Index"
+
+
+import { Ajuda } from "@/components/Ajuda";
+import { Footer } from "@/components/Footer";
+import { Description } from "@/components/layout/Description";
+
+import { Infos } from '@/components/Infos/Index';
+
+import casa from './imgs/casa.jpg'
+
+
 
 export default function Casa() {
   return (
     <main className="bg-zinc-50 text-zinc-600">
       {/* navbar */}
       <Navbar />
+
       {/* Infos */}
-      <Infos
-        house="Lorem"
-        referencia="12345"
-        endereco="bairro, ipsun, 123"
-        compartilhar='"12345678"'
+      <Infos.Header
+        house=''
+        referencia=''
+        endereco=''
+        compartilhar=''
+      />
+
+      <Infos.Caroussel>
+        <Infos.Image>
+          <Image src={casa} alt='' />
+        </Infos.Image>
+      </Infos.Caroussel>
+      
+      <Infos.Hero
         valor=''
         dormitorios=''
         vagas=''
@@ -23,8 +42,10 @@ export default function Casa() {
       />
       {/* descrição */}
       <Description />
+
       {/* Falar com o corretor */}
       <Ajuda />
+      
       {/* footer */}
       <Footer />
     </main>

@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import logo from "../assets/logo-2.png"
-import logoDev from "../assets/logo-dev.png"
+import logo from "@/assets/logo-2.png"
+import logoDev from "@/assets/logo-dev.png"
 
 export function Footer() {
   return (

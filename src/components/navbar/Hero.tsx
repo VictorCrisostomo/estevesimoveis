@@ -1,12 +1,13 @@
+'use client';
+
 import Image from "next/image"
-import Link from "next/link"
 
-import { Instagram, Facebook, Mail, Menu } from "lucide-react"
-import whatsapp from "../assets/whatsapp.png"
-import logo from "../assets/logo-1.png"
+import { Instagram, Facebook, Mail } from "lucide-react"
+import whatsapp from "@/assets/whatsapp.png"
 
 
-export function Navbar() {
+export function Hero() {
+
   return(
     <section>
       {/* Hero */}
@@ -41,35 +42,6 @@ export function Navbar() {
           </div>
         </div>
       </div>
-      {/* navbar */}
-      <nav className="bg-zinc-300 text-zinc-600">
-        <div className="px-8 md:px-16 py-2 flex justify-between items-center">
-          <Link href="/">
-            <Image src={logo} alt="" className="w-32 md:w-44" />
-          </Link>
-          <div className="md:flex gap-4 hidden">
-            <Link href={"/"}>
-              <p className="hover:text-indigo-700">Inicio</p>
-            </Link>
-            <Link href={"../buscar-imoveis"}>
-              <p className="hover:text-indigo-700">Buscar Imoveis</p>
-            </Link>
-            <Link href={"../quem-somos"}>
-              <p className="hover:text-indigo-700">Quem somos</p>
-            </Link>
-            <Link href={"../contato"}>
-              <p className="hover:text-indigo-700">Contato</p>
-            </Link>
-            <Link href={"../blog"}>
-              <p className="hover:text-indigo-700">Blog</p>
-            </Link>
-
-          </div>
-          <div className="md:hidden">
-            <Menu className="w-8 h-8"/>
-          </div>
-        </div>
-      </nav>
     </section>
   )
 }

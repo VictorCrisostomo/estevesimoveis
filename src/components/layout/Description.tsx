@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import whatsapp from "../../assets/whatsapp.png"
+import whatsapp from "@/assets/whatsapp.png"
 
 import { BoxSelect, HardHat, Phone } from "lucide-react";
 

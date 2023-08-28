@@ -1,8 +1,8 @@
 import Image from "next/image"
 
-import house from "../../assets/undraw_house_searching_re_stk8.svg"
+import house from "@/assets/undraw_house_searching_re_stk8.svg"
 
-import { Navbar } from "@/components/Navbar"
+import Navbar from "@/components/navbar/Index"
 import { Footer } from '@/components/Footer';
 import { Card } from '@/components/Cards';
 import { Caroussel } from '@/components/Caroussel';

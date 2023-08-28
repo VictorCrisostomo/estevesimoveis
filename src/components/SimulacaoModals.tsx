@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { Modal } from 'flowbite-react';
 import Image from "next/image";
 
-import * as bbLogoPng from "../assets/bb-logo.png"
-import * as logoBraPng from "../assets/logo-bra.png"
-import * as logoItauPng from "../assets/logo-itau.png"
-import * as logoCaixaPng from "../assets/logo-caixa.png"
-import * as logoBNordestePng from "../assets/banco-nordeste.png"
+import * as bbLogoPng from "@/assets/bb-logo.png"
+import * as logoBraPng from "@/assets/logo-bra.png"
+import * as logoItauPng from "@/assets/logo-itau.png"
+import * as logoCaixaPng from "@/assets/logo-caixa.png"
+import * as logoBNordestePng from "@/assets/banco-nordeste.png"
 
 export function SimulacaoModals() {
   const [openModal, setOpenModal] = useState<string | undefined>();
