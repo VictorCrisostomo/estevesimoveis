@@ -3,7 +3,7 @@ import Image from 'next/image';
 import contact from "@/assets/undraw_mobile_marketing_re_p77p.svg"
 import whatsapp from "@/assets/whatsapp.png"
 
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/navbar/Index";
 import { Bed, Facebook, Instagram, Mail, Phone } from 'lucide-react';
 import { Footer } from '@/components/Footer';
 
