@@ -122,7 +122,7 @@ export default function Home() {
                 </div>
 
                 <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <Link href={"./sitios"}>
+                  <Link href={"./imoveis-rurais"}>
                     <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
                       <div className="w-48 h-40 bg-orange-800 rounded-t-xl"></div>
                       <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">

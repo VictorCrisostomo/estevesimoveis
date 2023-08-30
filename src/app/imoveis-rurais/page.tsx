@@ -1,11 +1,10 @@
 import Navbar from "@/components/navbar/Index"
 import { Footer } from '@/components/Footer';
 import { Caroussel } from '@/components/Caroussel';
-import { Group } from "@/components/groupCards/Index";
-import { CasasGroup } from "@/components/imoveis/casas/Index";
+import { SitiosGroup } from "@/components/imoveis/sitios/Index";
 import Contato from "@/components/Contato";
 
-export default function BuscarImoveis() {
+export default function ImoveisRurais() {
 
   return (
     <main className="bg-zinc-200 text-zinc-600">
@@ -16,9 +15,7 @@ export default function BuscarImoveis() {
       <Caroussel />
 
       {/* imoveis */}
-      <Group.Root title="Todos os imoveis">
-        <CasasGroup/>
-      </Group.Root>
+      <SitiosGroup />
 
       {/* Falar com o corretor */}
       <Contato />
