@@ -4,8 +4,10 @@ import house from "@/assets/undraw_house_searching_re_stk8.svg"
 
 import Navbar from "@/components/navbar/Index"
 import { Footer } from '@/components/Footer';
-import { Card } from '@/components/Cards';
 import { Caroussel } from '@/components/Caroussel';
+import { Group } from "@/components/groupCards/Index";
+import { CasasGroup } from "@/components/imoveis/casas/Index";
+
 // import { Caroussel } from '../../components/Caroussel';
 
 export default function BuscarImoveis() {
@@ -14,21 +16,15 @@ export default function BuscarImoveis() {
     <main className="bg-zinc-200 text-zinc-600">
       {/* Navbar */}
       <Navbar />
+
       {/* slide */}
       <Caroussel />
-      {/* <div className=" min-w-screen h-44 md:h-80 bg-[url(../assets/banner.jpg)] bg-cover bg-center"/> */}
+
       {/* imoveis */}
-      <section className="py-10 md:px-24 md:py-20">
-        <div className="mx-6">
-          <p className="text-zinc-800 text-xl font-semibold text-center md:text-left pb-5">Todos os imoveis</p>
-        </div>
-        <div className=" grid grid-cols-1 md:grid-cols-4 justify-items-center">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-      </section>
+      <Group.Root title="Todos os imoveis">
+          <CasasGroup/>
+        </Group.Root>
+
       {/* Falar com o corretor */}
       <section className="min-h-screen bg-zinc-100 flex flex-col justify-center">
             <div className="flex flex-col items-center">
@@ -47,6 +43,7 @@ export default function BuscarImoveis() {
               </div>
             </div>
       </section>
+
       {/* footer */}
       <Footer />
     </main>

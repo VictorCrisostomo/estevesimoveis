@@ -10,7 +10,7 @@ export function CardDescription({valor=''}: CardProps) {
   return(
         <div className="bg-zinc-50 rounded-xl shadow-xl px-6 py-7">
           <p className="font-medium text-sm">Valor</p>
-          <p className="font-extrabold text-xl text-emerald-600">{valor}</p>
+          <p className="font-extrabold text-xl text-emerald-600">R$ {valor}</p>
 
           <hr className="border-zinc-600 mx-1 my-3" />
 
