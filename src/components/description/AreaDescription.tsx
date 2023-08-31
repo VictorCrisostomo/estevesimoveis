@@ -16,7 +16,7 @@ export function AreaDescription({ terreno='', construcao='' }: AreaProps){
               </div>
               <div className="">
                 <p className="font-medium text-sm">Área do terreno</p>
-                <p className="text-zinc-700 font-bold">{terreno}</p>
+                <p className="text-zinc-700 font-bold">{terreno}m²</p>
               </div>
             </div>
             <div className=" flex items-center gap-2">
@@ -25,7 +25,7 @@ export function AreaDescription({ terreno='', construcao='' }: AreaProps){
               </div>
               <div className="">
                 <p className="font-medium text-sm">Área construída</p>
-                <p className="text-zinc-700 font-bold">{construcao}</p>
+                <p className="text-zinc-700 font-bold">{construcao}m²</p>
               </div>
             </div>
     </>
