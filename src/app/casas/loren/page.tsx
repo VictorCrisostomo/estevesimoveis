@@ -7,8 +7,6 @@ import { Description } from "@/components/description/Index";
 import { Ajuda } from "@/components/Ajuda";
 import { Footer } from "@/components/Footer";
 
-import casa from './imgs/casa.jpg'
-
 export default function Casa() {
   return (
     <main className="bg-zinc-50 text-zinc-600">
@@ -24,7 +22,6 @@ export default function Casa() {
       />
       <Infos.Caroussel>
         <Infos.Image>
-          <Image src={casa} alt='' />
         </Infos.Image>
       </Infos.Caroussel>
       <Infos.Hero

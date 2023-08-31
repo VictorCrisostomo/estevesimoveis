@@ -16,7 +16,7 @@ export function HeaderInfo({ house='', referencia='', endereco='', compartilhar=
         <p className="text-xs">
           <b className="font-bold text-xl">{house}</b> (REF: {referencia})
         </p>
-        <p>{endereco}</p>
+        <p className="text-sm">{endereco}</p>
       </div>
       <div className="flex gap-3">
         <a href="#description">

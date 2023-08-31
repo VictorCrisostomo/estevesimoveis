@@ -68,7 +68,7 @@ export default function Home() {
       {/*Hero*/}
       <section className="min-h-screen flex justify-center items-center">
         <video className="min-h-screen w-[100%] h-[100%] object-cover absolute opacity-70" loop autoPlay muted>
-            <source src={"video/natureza.mp4"} />
+            <source src={"video/video.mp4"} />
         </video>
 
         <div className="mx-8 md:mx-48">

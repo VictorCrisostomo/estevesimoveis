@@ -24,7 +24,31 @@ export default function C01() {
       />
       <Infos.Caroussel>
         <Infos.Image>
-          {/* <Image src={casa} alt='' /> */}
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c01.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c02.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c03.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c04.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c05.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c06.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c07.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c08.jpg)]  bg-center bg-cover" />
+        </Infos.Image>
+        <Infos.Image>
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c01/c09.jpg)]  bg-center bg-cover" />
         </Infos.Image>
       </Infos.Caroussel>
       <Infos.Hero
