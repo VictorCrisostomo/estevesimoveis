@@ -1,4 +1,5 @@
 import { Building2, CircleDollarSign } from "lucide-react";
+import { SimulacaoModals } from "./SimulacaoModals";
 
 export function Ajuda() {
   return(
@@ -17,7 +18,8 @@ export function Ajuda() {
             <p className="text-lg font-semibold text-center text-zinc-700">Simulador de Crédito</p>
             <p className="text-sm text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
             <div className="flex justify-center">
-              <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Simular financiamento</button>
+              <SimulacaoModals />
+              {/* <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Simular financiamento</button> */}
             </div>
           </div>
         </div>

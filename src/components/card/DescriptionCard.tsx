@@ -11,7 +11,7 @@ type DescriptionProps = {
 
 export function DescriptionCard({tipo='', bairro='', endereco='', area='', dormitorios='', valor=''}: DescriptionProps) {
   return(
-    <div className="w-72 h-56 md:w-60 md:h-48 bg-zinc-100 rounded-b-xl">
+    <div className="w-80 h-60 md:w-72 md:h-56 bg-zinc-100 rounded-b-xl">
       <div className="px-7 pt-5 md:pt-3">
         <p className="text-2xl md:text-xl font-semibold text-zinc-800">{tipo}</p>
         <div className="mt-4 md:mt-2">
