@@ -54,10 +54,10 @@ export default function C01() {
       />
 
       {/* descrição */}
-      <Description.Video url='https://www.youtube.com/embed/1m8SjSiFYZE?si=AirR8RPzLhesvikO' />
+      <Description.Video url='' />
       <Description.Root>
         <Description.Text descricao='Imóvel residencial com a seguinte conformação 10,70m de frente por 10,60m de fundo por 22,30m de um lado e 22,00m do outro lado, perfazendo uma área total de 235,90m² tendo uma área construída de 129,42m² com a seguinte descrição: 02 salas, 01 suíte, 02 quartos, 01 sanitario, 01 cozinha, 01 garagem'>
-          <Description.Area terreno='235,90m²' construcao='129,42m²' />
+          <Description.Area terreno='235,90' construcao='129,42' />
         </Description.Text>
         <Description.Card valor='350.000,00' />
       </Description.Root>

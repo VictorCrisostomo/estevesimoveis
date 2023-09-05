@@ -57,7 +57,7 @@ export default function C02() {
       />
 
       {/* descrição */}
-      <Description.Video url='https://www.youtube.com/embed/1m8SjSiFYZE?si=AirR8RPzLhesvikO' />
+      <Description.Video url='' />
       <Description.Root>
         <Description.Text descricao='Casa de alto padrão'>
           <Description.Area terreno='542,88' construcao='359,10' />
