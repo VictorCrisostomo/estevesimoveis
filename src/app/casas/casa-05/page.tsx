@@ -40,10 +40,10 @@ export default function C05() {
           <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c05/c06.jpg)]  bg-center bg-cover" />
         </Infos.Image>
       <Infos.Image>
-          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c05/c06.jpg)]  bg-center bg-cover" />
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c05/c07.jpg)]  bg-center bg-cover" />
         </Infos.Image>
       <Infos.Image>
-          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c05/c06.jpg)]  bg-center bg-cover" />
+          <div className="snap-start w-[390px] h-[293px] md:w-[510px] md:h-96 bg-[url(../assets/c05/c08.jpg)]  bg-center bg-cover" />
         </Infos.Image>
       </Infos.Caroussel>
       <Infos.Hero
