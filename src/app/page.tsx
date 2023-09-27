@@ -7,6 +7,8 @@ import whatsapp from "@/assets/whatsapp.png"
 import family from "@/assets/undraw_family_vg76.svg"
 import logo from "@/assets/logo-2.png"
 
+import { Header } from "@/app/components/mainPage/header/Index"
+
 import { Footer } from "@/components/Footer"
 import { SimulacaoModals } from "@/components/SimulacaoModals"
 
@@ -14,71 +16,10 @@ export default function Home() {
   return (
     <main className="bg-zinc-200 text-zinc-600">
       {/* Navbar */}
-      <div className="w-[100%] absolute z-10 items-center grid grid-cols-3 justify-items-center">
-        {/* Whatsapp */}
-        <div>
-          <div className="hidden md:block">
-            <a
-              href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
-              className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-semibold flex justify-center items-center">
-              (73) 9 9997-3057 <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
-            </a>
-          </div>
-          <div className="px-2 py-2 rounded-full bg-zinc-100 md:hidden">
-            <a
-              href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
-              className=" text-zinc-100 font-semibold">
-              <Image src={whatsapp} alt="whats" className="w-6"/>
-            </a>
-          </div>
-        </div>
-        {/* Logo */}
-        <div
-        className="px-5 py-8 md:px-8 md:py-10 rounded-b-2xl bg-zinc-100">
-          <Image src={logo} alt="" className="w-36"/>
-        </div>
-        {/* Social Medias */}
-        <div className="flex gap-1 md:gap-2">
-          <a 
-            href="https://www.instagram.com/estevesimoveis/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
-            <Instagram className="md:w-6 md:h-6 w-7 h-7"/>
-          </a>
-          <a
-            href="https://www.facebook.com/estevesimoveis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
-            <Facebook className="md:w-6 md:h-6 w-7 h-7"/>
-          </a>
-          <a
-            href="malito:imobiliariaestevesimoveis@hotmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
-            <Mail className="md:w-6 md:h-6 w-7 h-7"/>
-          </a>
-          {/* <p className="text-2xl text-center text-zinc-100"> | </p>
-          <a href="" className="w-16 h-10 border-2 rounded-lg border-zinc-200 text-zinc-100 flex justify-center items-center font-bold">X</a> */}
-        </div>
-      </div>
+      <Header.NavBar />
 
       {/*Hero*/}
-      <section className="min-h-screen flex justify-center items-center">
-        <video className="min-h-screen w-[100%] h-[100%] object-cover absolute opacity-70" loop autoPlay muted>
-            <source src={"video/video.mp4"} />
-        </video>
-
-        <div className="mx-8 md:mx-48">
-          <h1 className="text-4xl md:text-6xl font-bold relative text-white text-center drop-shadow-lg shadow-black">Esteves Imóveis</h1>
-          <br />
-          <p className="relative text-white text-center drop-shadow-lg shadow-black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, saepe. Exercitationem molestiae magni est, consectetur expedita inventore sit dolore accusantium laboriosam optio quae cupiditate minima quidem perferendis non, illum praesentium.
-          </p>
-        </div>
-      </section>
+      <Header.Hero />
 
       {/*carousel options*/}
       <section className="bg-zinc-200">
