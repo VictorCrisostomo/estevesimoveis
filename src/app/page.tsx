@@ -1,13 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Heart, Bed, Ruler, CircleDollarSign, Building2, Instagram, Facebook, Mail } from "lucide-react"
-
-
-import whatsapp from "@/assets/whatsapp.png"
-import family from "@/assets/undraw_family_vg76.svg"
-import logo from "@/assets/logo-2.png"
+import { Heart, Bed, Ruler, CircleDollarSign, Building2 } from "lucide-react"
 
 import { Header } from "@/app/components/mainPage/header/Index"
+import { Caroussel } from "@/app/components/mainPage/caroussel/Index"
 
 import { Footer } from "@/components/Footer"
 import { SimulacaoModals } from "@/components/SimulacaoModals"
@@ -22,76 +16,9 @@ export default function Home() {
       <Header.Hero />
 
       {/*carousel options*/}
-      <section className="bg-zinc-200">
-        <div className="pt-12 md:mx-32">
-          <h2 className="text-xl font-semibold text-center text-zinc-700 pb-4">O que você está procurando?</h2>
-          
-          <div className="mt-6 relative overflow-auto" id="">
-              <div className="relative flex gap-6 snap-x overflow-x-auto scrollCards">
-
-                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <Link href={"./casas"}>
-                    <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
-                      <div className="w-48 h-40 bg-red-700 rounded-t-xl"></div>
-                      <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Casas</p>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <Link href={"./aluguel-de-imoveis"}>
-                    <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
-                      <div className="w-48 h-40 bg-blue-700 rounded-t-xl"></div>
-                      <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="px-5 pt-3 text-lg">Aluguel de Imóveis</p>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <Link href={"./terrenos"}>
-                    <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
-                      <div className="w-48 h-40 bg-slate-700 rounded-t-xl"></div>
-                      <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Terrenos</p>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <Link href={"./imoveis-rurais"}>
-                    <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
-                      <div className="w-48 h-40 bg-orange-800 rounded-t-xl"></div>
-                      <div className="w-48 h-20 bg-zinc-100 rounded-b-xl">
-                        <p className="ml-5 pt-3 text-lg">Imóveis Rurais</p>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-                  <Link href={"./buscar-imoveis"}>
-                    <div className="snap-start w-48 h-60 rounded-2xl bg-zinc-100 flex items-center justify-center drop-shadow-lg">
-                      <p className="p-2 text-lg text-center">Ver todos os imóveis disponíveis.</p>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div className="my-20 mx-8 md:mx-32 md:flex items-center justify-center">
-            <div className="pb-8 md:mr-4 flex justify-center md:justify-end">
-              <Image src={family} alt="" className="w-[50%] md:w-[75%]" />
-            </div>
-            <div className="md:ml-4">
-              <p className="text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.</p>
-            </div>
-        </div>
-      </section>
+      <Caroussel.Root>
+        <Caroussel.Cards />
+      </Caroussel.Root>
 
       {/* Cards Destaques */}
       <section className="bg-zinc-200">
