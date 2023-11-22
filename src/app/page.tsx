@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 import { Heart, Bed, Ruler, CircleDollarSign, Building2 } from "lucide-react"
 
-import { Header } from "@/app/components/mainPage/header/Index"
-import { Caroussel } from "@/app/components/mainPage/caroussel/Index"
-
-import { Footer } from "@/components/Footer"
+import { Header } from "@/components/ui/mainPage/header/Index"
+import { Caroussel } from "@/components/ui/mainPage/caroussel/Index"
+import { Card } from "@/components/ui/card/Index"
 import { SimulacaoModals } from "@/components/SimulacaoModals"
+import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -21,11 +23,28 @@ export default function Home() {
       </Caroussel.Root>
 
       {/* Cards Destaques */}
+       <Card.Root>
+        <Card.Image className="">
+          <Image src='' alt='' />
+        </Card.Image>
+        <Card.Content className="" >
+          <Card.Description
+            tipo=''
+            bairro=''
+            endereco=''
+            numero=''
+            area=''
+            dormitorios=''
+            valor=''
+            />
+        </Card.Content>
+      </Card.Root>
+
       <section className="bg-zinc-200">
         <div className="md:mx-20">
           <h2 className="text-xl font-semibold text-center text-zinc-700">Destaques</h2>
 
-          <div className="my-10 flex flex-col items-center gap-8 md:gap-0 md:flex-row md:justify-around">
+          <div className="my-10 flex flex-col items-center gap-8 md:gap-14 md:flex-row md:justify-center">
             <div className="w-72 h-96 rounded-2xl drop-shadow-lg">
               <div className="w-72 h-40 bg-yellow-500 rounded-t-xl"></div>
               <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
