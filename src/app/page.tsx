@@ -23,7 +23,7 @@ export default function Home() {
       </Caroussel.Root>
 
       {/* Cards Destaques */}
-       <Card.Root>
+       {/* <Card.Root>
         <Card.Image className="">
           <Image src='' alt='' />
         </Card.Image>
@@ -38,7 +38,7 @@ export default function Home() {
             valor=''
             />
         </Card.Content>
-      </Card.Root>
+      </Card.Root> */}
 
       <section className="bg-zinc-200">
         <div className="md:mx-20">

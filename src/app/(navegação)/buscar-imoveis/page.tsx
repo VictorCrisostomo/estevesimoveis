@@ -2,7 +2,7 @@ import Navbar from "@/components/navbar/Index"
 import { Footer } from '@/components/Footer';
 import { Caroussel } from '@/components/Caroussel';
 import { Group } from "@/components/ui/groupCards/Index";
-import { CasasGroup } from "@/components/imoveis/casas/Index";
+import CasasGroup from "@/components/imoveis/casas/Index";
 import Contato from "@/components/Contato";
 
 export default function BuscarImoveis() {
