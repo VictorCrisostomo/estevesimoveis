@@ -18,9 +18,9 @@ export default function Home() {
       <Header.Hero />
 
       {/*carousel options*/}
-      <Caroussel.Root>
-        <Caroussel.Cards />
-      </Caroussel.Root>
+        <Caroussel.Root>
+          <Caroussel.Cards />
+        </Caroussel.Root>
 
       {/* Cards Destaques */}
        {/* <Card.Root>

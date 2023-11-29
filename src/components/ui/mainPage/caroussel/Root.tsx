@@ -12,7 +12,7 @@ export function Root({children}: RootProps) {
         <div className="pt-12 md:mx-32">
           <h2 className="text-xl font-semibold text-center text-zinc-700 pb-4">O que você está procurando?</h2>
           
-          <div className="mt-6 relative overflow-auto">
+          <div className="flex justify-center mt-6 relative overflow-auto">
             {children}
           </div>
         </div>

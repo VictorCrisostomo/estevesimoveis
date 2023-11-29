@@ -15,14 +15,18 @@ export function MainNav() {
           <div className="hidden md:block">
             <a
               href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-semibold flex justify-center items-center">
-              (73) 9 9997-3057 <Image src={whatsapp} alt="whats" className="w-4 ml-2"/>
+              (73) 9 9997-3057 <Image src={whatsapp} alt="whats" className="w-4 ml-2" />
             </a>
           </div>
           {/* Botao mobile */}
           <div className="px-2 py-2 rounded-full bg-zinc-100 md:hidden">
             <a
               href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
+              target="_blank"
+              rel="noopener noreferrer"
               className=" text-zinc-100 font-semibold">
               <Image src={whatsapp} alt="whats" className="w-6"/>
             </a>
