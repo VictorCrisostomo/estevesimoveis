@@ -119,7 +119,9 @@ export default function Home() {
                 <p className="text-lg font-semibold text-center text-zinc-700">Quer vender ou alugar?</p>
                 <p className="text-sm text-center">Precisando vender ou alugar o seu Imóvel?</p>
                 <div className="flex justify-center">
-                  <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Clique aqui</button>
+                  <a href="https://wa.me/5573999973057?text=Ol%C3%A1,%20eu%20gostaria%20de%20vender%20ou%20alugar%20o%20meu%20imovel." target="_blank" rel="noopener noreferrer">
+                    <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Clique aqui</button>
+                  </a>
                 </div>
               </div>
             </div>

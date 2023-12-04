@@ -76,7 +76,7 @@ export function SimulacaoModals() {
             </div>
             <div className="rounded-2xl">
               <div className="w-40 h-32 rounded-b-xl flex justify-center items-center">
-                <a href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site." target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5573999973057?text=Ol%C3%A1,%20eu%20preciso%20de%20ajuda%20pra%20fazer%20uma%20simula%C3%A7%C3%A3o%20de%20financiamento." target="_blank" rel="noopener noreferrer">
                   <button className="bg-neutral-900 hover:bg-neutral-800 text-white py-2 px-4 rounded text-xs">Falar com o corretor</button>
                 </a>
               </div>
