@@ -63,8 +63,6 @@ export function MainNav() {
             className="md:w-10 md:h-10 md:bg-zinc-100 md:text-gray-400 text-zinc-100 rounded-lg flex justify-center items-center">
             <Mail className="md:w-6 md:h-6 w-7 h-7"/>
           </a>
-          {/* <p className="text-2xl text-center text-zinc-100"> | </p>
-          <a href="" className="w-16 h-10 border-2 rounded-lg border-zinc-200 text-zinc-100 flex justify-center items-center font-bold">X</a> */}
         </div>
       </div>
     </>

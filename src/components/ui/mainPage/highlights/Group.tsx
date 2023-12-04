@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 type GroupProps = {
   children: React.ReactNode
 }
@@ -12,7 +14,9 @@ export function Group({ children }: GroupProps) {
         {children}
       </div>
       <div className="flex justify-center my-10">
-          <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
+          <Link href={"./casas"}>
+            <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
+          </Link>
       </div>
     </div>
   </section>

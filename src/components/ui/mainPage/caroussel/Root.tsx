@@ -22,14 +22,14 @@ export function Root({children}: RootProps) {
               <Image src={family} alt="" className="w-[50%] md:w-[75%]" />
             </div>
             <div className="md:ml-4">
-              <p className="text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ipsa laborum aut natus dolor laboriosam possimus quo mollitia cupiditate in fuga asperiores harum non, id distinctio, repellendus amet, sequi esse.</p>
+              <p
+                className="text-center md:text-left"
+                >
+                  Encontre o lar dos seus sonhos conosco! Nossa imobiliária oferece uma variedade de opções cuidadosamente selecionadas. Nossa equipe está pronta para ajudá-lo a descobrir o próximo imóvel perfeito para a sua família. Embarque nesta jornada emocionante conosco e encontre a casa dos seus sonhos.
+                </p>
             </div>
         </div>
       </section>
     </>
-
-
-
-
   )
 }

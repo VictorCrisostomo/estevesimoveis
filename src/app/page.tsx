@@ -1,9 +1,11 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
-import { Heart, Bed, Ruler, CircleDollarSign, Building2 } from "lucide-react"
+import { CircleDollarSign, Building2 } from "lucide-react"
 
 import { Header } from "@/components/ui/mainPage/header/Index"
 import { Caroussel } from "@/components/ui/mainPage/caroussel/Index"
+import { Group } from '@/components/ui/mainPage/highlights/Group';
 import { Card } from "@/components/ui/card/Index"
 import { SimulacaoModals } from "@/components/SimulacaoModals"
 import { Footer } from "@/components/Footer"
@@ -23,108 +25,65 @@ export default function Home() {
         </Caroussel.Root>
 
       {/* Cards Destaques */}
-       {/* <Card.Root>
-        <Card.Image className="">
-          <Image src='' alt='' />
-        </Card.Image>
-        <Card.Content className="" >
-          <Card.Description
-            tipo=''
-            bairro=''
-            endereco=''
-            numero=''
-            area=''
-            dormitorios=''
-            valor=''
-            />
-        </Card.Content>
-      </Card.Root> */}
+      <Group>
+        <Link href={"./casas/12"}>
+          <Card.Root>
+            <Card.Image className="relative w-72 h-40 ">
+              <Image src='https://esteves-db.vercel.app/ei12/c01.jpg' quality={70} fill alt='' className='rounded-t-xl' />
+            </Card.Image>
+            <Card.Content className="w-72 h-56" >
+              <Card.Description
+                tipo='Casa'
+                bairro='Ilha de Atalaia'
+                endereco='Tv. Ilha Náutica'
+                numero='S/N'
+                area='300,00'
+                dormitorios='2'
+                valor='280.000,00'
+                />
+            </Card.Content>
+          </Card.Root>
+        </Link>
 
-      <section className="bg-zinc-200">
-        <div className="md:mx-20">
-          <h2 className="text-xl font-semibold text-center text-zinc-700">Destaques</h2>
+        <Link href={"./casas/50"}>
+          <Card.Root>
+            <Card.Image className="relative w-72 h-40 ">
+              <Image src='https://esteves-db.vercel.app/ei50/c02.jpg' quality={70} fill alt='' className='rounded-t-xl' />
+            </Card.Image>
+            <Card.Content className="w-72 h-56" >
+              <Card.Description
+                tipo='Casa'
+                bairro='Sócrates Rezende'
+                endereco='Av. Helena Chaves'
+                numero='166'
+                area='394,00'
+                dormitorios='3'
+                valor='300.000,00'
+                />
+            </Card.Content>
+          </Card.Root>
+        </Link>
 
-          <div className="my-10 flex flex-col items-center gap-8 md:gap-14 md:flex-row md:justify-center">
-            <div className="w-72 h-96 rounded-2xl drop-shadow-lg">
-              <div className="w-72 h-40 bg-yellow-500 rounded-t-xl"></div>
-              <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
-                <div className="mr-7 ml-7 pt-5">
-                <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
-                <div className="mt-4">
-                  <p className="text-sm font-semibold text-zinc-700">Bairro </p>
-                  <p className="text-sm">Rua Loren Ipsum, 000</p>
-                </div>
-                <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm"> 
-                    <Ruler className="mr-1 text-zinc-700" /> 00²
-                  </p>
-                  <p className="flex text-sm items-center">
-                    <Bed className="mr-1 text-zinc-700" /> 2 dorms.
-                  </p>
-                </div>
-                <div className="mt-6 flex justify-between items-center">
-                  <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
-                  {/* <Heart /> */}
-                </div>
-                </div>
-              </div>
-            </div>
+        <Link href={"./casas/51"}>
+          <Card.Root>
+            <Card.Image className="relative w-72 h-40 ">
+              <Image src='https://esteves-db.vercel.app/ei51/c01.jpg' quality={70} fill alt='' className='rounded-t-xl' />
+            </Card.Image>
+            <Card.Content className="w-72 h-56" >
+              <Card.Description
+                tipo='Casa'
+                bairro='Centro'
+                endereco='Av. Cel. Augusto L. de Carvalho'
+                numero='439'
+                area='1.161,80'
+                dormitorios='3'
+                valor='2.000.000,00'
+                />
+            </Card.Content>
+          </Card.Root>
+        </Link>
 
-            <div className="w-72 h-96 rounded-2xl drop-shadow-lg">
-              <div className="w-72 h-40 bg-red-700 rounded-t-xl"></div>
-              <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
-              <div className="mr-7 ml-7 pt-5">
-                <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
-                <div className="mt-4">
-                  <p className="text-sm font-semibold text-zinc-700">Bairro </p>
-                  <p className="text-sm">Rua Loren Ipsum, 000</p>
-                </div>
-                <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm"> 
-                    <Ruler className="mr-1 text-zinc-700"/> 00²
-                  </p>
-                  <p className="flex text-sm items-center text-zinc-600">
-                    <Bed className="mr-1 text-zinc-700" /> 2 dorms.
-                  </p>
-                </div>
-                <div className="mt-6 flex justify-between items-center">
-                  <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
-                  {/* <Heart /> */}
-                </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-72 h-96 rounded-2xl drop-shadow-lg">
-              <div className="w-72 h-40 bg-blue-700 rounded-t-xl"></div>
-              <div className="w-72 h-56 bg-zinc-100 rounded-b-xl">
-              <div className="mr-7 ml-7 pt-5">
-                <p className=" text-2xl font-semibold text-zinc-800">Casas</p>
-                <div className="mt-4">
-                  <p className="text-sm font-semibold text-zinc-700">Bairro </p>
-                  <p className="text-sm">Rua Loren Ipsum, 000</p>
-                </div>
-                <div className="flex mt-3 justify-between items-center">
-                  <p className="flex text-sm"> 
-                    <Ruler className="mr-1 text-zinc-700" /> 00²
-                  </p>
-                  <p className="flex text-sm items-center">
-                    <Bed className="mr-1 text-zinc-700" /> 2 dorms.
-                  </p>
-                </div>
-                <div className="mt-6 flex justify-between items-center">
-                  <p className="text-xl font-bold text-emerald-500">R$ 000.000,000</p>
-                  {/* <Heart /> */}
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center my-10">
-              <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
-          </div>
-        </div>
-      </section>
+      </Group>
 
       {/* About */}
       <section className="bg-white min-h-screen">

@@ -5,8 +5,6 @@ import casa from "@/assets/imgs-cards/c02.jpg"
 import comercial from "@/assets/imgs-cards/IMG_7681-min.jpg"
 import terreno from "@/assets/imgs-cards/DJI_k 0100-min.jpg"
 
-
-
 export function Cards() {
   return (
     <>          
@@ -24,17 +22,6 @@ export function Cards() {
             </div>
           </Link>
         </div>
-
-        {/* <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-          <Link href={"./aluguel-de-imoveis"}>
-            <div className="snap-start rounded-2xl drop-shadow-lg">
-              <div className="w-48 h-44 bg-blue-700 rounded-t-xl"></div>
-              <div className="w-48 h-16 bg-zinc-100 rounded-b-xl">
-                <p className="px-5 pt-2 text-base">Aluguel de Imóveis</p>
-              </div>
-            </div>
-          </Link>
-        </div> */}
 
         <div className="snap-center shrink-0 first:pl-8 last:pr-8">
           <Link href={"./imoveis-comercial"}>
@@ -62,17 +49,6 @@ export function Cards() {
           </Link>
         </div>
 
-        {/* <div className="snap-center shrink-0 first:pl-8 last:pr-8">
-          <Link href={"./imoveis-rurais"}>
-            <div className="snap-start w-48 h-60 rounded-2xl drop-shadow-lg">
-              <div className="w-48 h-44 bg-orange-800 rounded-t-xl"></div>
-              <div className="w-48 h-16 bg-zinc-100 rounded-b-xl">
-                <p className="ml-5 pt-2 text-base">Imóveis Rurais</p>
-              </div>
-            </div>
-          </Link>
-        </div> */}
-
         <div className="snap-center shrink-0 first:pl-8 last:pr-8">
           <Link href={"./buscar-imoveis"}>
             <div className="snap-start w-48 h-60 rounded-2xl bg-zinc-100 flex items-center justify-center drop-shadow-lg">
@@ -82,9 +58,5 @@ export function Cards() {
         </div>
       </div>
     </>
-
-
-
-
   )
 }
