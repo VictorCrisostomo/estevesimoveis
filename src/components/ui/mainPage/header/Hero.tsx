@@ -1,5 +1,6 @@
 'use client';
 
+import { Carousel } from 'flowbite-react';
 import Image from 'next/image';
 
 import img1 from "@/assets/imgs/img1.jpg"
@@ -13,45 +14,44 @@ import img8 from "@/assets/imgs/img8.jpg"
 
 
 
-import { Carousel } from 'flowbite-react';
 
 export function Hero() {
   return (
     <>
       {/* Background img/video */}
-      <section className="min-h-screen flex justify-center items-center bg-black">
-        <video className="min-h-screen w-[100%] h-[100%] object-cover hidden md:block absolute opacity-60" loop autoPlay muted>
+      <section className="min-h-screen flex justify-center items-center">
+        <video className="min-h-screen w-[100%] h-[100%] object-cover hidden md:block absolute" loop autoPlay muted>
             <source src={"video/video.mp4"} />
         </video>
         
       <Carousel className='md:hidden cursor-default'>
         <div className="relative">
-          <Image src={img1} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img1} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
         <div className="relative">
-          <Image src={img2} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img2} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
         <div className="relative">
-          <Image src={img3} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img3} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
         <div className="relative">
-          <Image src={img4} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img4} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
         <div className="relative">
-          <Image src={img5} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img5} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
         <div className="relative">
-          <Image src={img6} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img6} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
         <div className="relative">
-          <Image src={img7} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img7} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
         <div className="relative">
-          <Image src={img8} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+          <Image src={img8} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%]' />
         </div>
-
-
       </Carousel>
+
+      <div className="absolute bg-black opacity-40 min-h-screen w-[100%] h-[100%]"/>
 
 
         {/* Texts */}
