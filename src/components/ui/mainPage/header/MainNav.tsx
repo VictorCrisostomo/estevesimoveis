@@ -14,7 +14,7 @@ export function MainNav() {
           {/* Botao desktop */}
           <div className="hidden md:block">
             <a
-              href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
+              href="https://wa.me/5573999973057?text=Ol%C3%A1,%20estou%20visitando%20seu%20site%20e%20preciso%20de%20uma%20ajuda."
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-1 border-2 rounded-full border-zinc-200 text-zinc-100 font-semibold flex justify-center items-center">
@@ -24,7 +24,7 @@ export function MainNav() {
           {/* Botao mobile */}
           <div className="px-2 py-2 rounded-full bg-zinc-100 md:hidden">
             <a
-              href="https://web.whatsapp.com/send?phone=5573999973057&text=Ol%C3%A1.%20Estou%20visitando%20o%20site."
+              href="https://wa.me/5573999973057?text=Ol%C3%A1,%20estou%20visitando%20seu%20site%20e%20preciso%20de%20uma%20ajuda."
               target="_blank"
               rel="noopener noreferrer"
               className=" text-zinc-100 font-semibold">
