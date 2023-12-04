@@ -25,29 +25,29 @@ export function Hero() {
         </video>
         
       <Carousel className='md:hidden cursor-default'>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img1} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img1} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img2} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img2} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img3} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img3} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img4} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img4} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img5} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img5} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img6} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img6} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img7} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img7} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
-        <div className="relative flex items-center justify-center object-cover">
-          <Image src={img8} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
+        <div className="relative">
+          <Image src={img8} quality={70} alt="" className='object-cover min-h-screen w-[100%] h-[100%] opacity-60' />
         </div>
 
 
