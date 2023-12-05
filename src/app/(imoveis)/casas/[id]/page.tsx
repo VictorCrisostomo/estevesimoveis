@@ -20,6 +20,9 @@ export interface Imovel {
   valor: string
   descricao: string
   images: string
+  url: {
+    videoLink: string
+  }
 }
 
 async function getImovel(id: string): Promise<Imovel> {
@@ -42,8 +45,6 @@ export default async function Casa(
 ) {
   const imovel = await getImovel(id)
   const url: string = 'https://esteves-db.vercel.app'
-
-
 
   return (
     <main className="bg-zinc-50 text-zinc-600">
@@ -82,19 +83,25 @@ export default async function Casa(
         
       </Infos.Caroussel>
       <Infos.Hero
-        valor='2.000.000,00'
-        dormitorios='7'
-        vagas='4'
-        area='394,77'
+        valor={imovel.valor}
+        dormitorios={imovel.dormitorios}
+        vagas={imovel.vagas}
+        area={imovel.terreno}
       />
 
       {/* descrição */}
-      <Description.Video url='https://www.youtube.com/embed/0Z434xbIubo?si=SZercvuj5mWa0ciq' />
+      <Description.Video url={imovel.url.videoLink} />
       <Description.Root>
-        <Description.Text descricao='Casa de alto padrão'>
-          <Description.Area terreno='1.161,80' construcao='394,77' />
+        <Description.Text descricao={imovel.descricao}>
+          <Description.Area
+            terreno={imovel.terreno}
+            construcao={imovel.construcao}
+            />
         </Description.Text>
-        <Description.Card valor='2.000.000,00' />
+        <Description.Card
+          valor={imovel.valor}
+          informacao=""
+          />
       </Description.Root>
 
       {/* Falar com o corretor */}
