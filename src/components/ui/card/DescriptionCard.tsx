@@ -16,8 +16,8 @@ export function DescriptionCard({tipo='', bairro='', endereco='', numero='', are
       <p className="text-2xl md:text-xl font-semibold text-zinc-800">{tipo}</p>
       <div className="mt-4 md:mt-2">
         <p className="text-sm font-semibold text-zinc-700">{bairro}</p>
-        <p className="text-sm">{endereco}</p>
-        <p className="text-sm">{numero}</p>
+        <p className="text-xs py-1">{endereco}</p>
+        <p className="text-xs">{numero}</p>
       </div>
       <div className="flex mt-3 justify-between items-center">
         <p className="flex text-sm"> 

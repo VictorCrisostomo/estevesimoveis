@@ -38,7 +38,7 @@ export default async function CasasGroup() {
         todos.map((todos) => (
           <Link key={todos.id} href={`./casas/${todos.id}`}>
             <Card.Root >
-              <Card.Image className="relative w-80 h-40 md:w-72 md:h-36">
+              <Card.Image className="relative w-72 h-40 md:w-64 md:h-40">
                 <Image
                   src={`${url}${todos.images[1]}`}
                   blurDataURL={`${url}${todos.blurs[1]}`}
@@ -49,7 +49,7 @@ export default async function CasasGroup() {
                   className="bg-center bg-cover rounded-t-xl"
                 />.
               </Card.Image>
-              <Card.Content className="">
+              <Card.Content className="h-60 md:h-52">
                 <Card.Description
                   tipo={todos.tipo}
                   bairro={todos.bairro}
