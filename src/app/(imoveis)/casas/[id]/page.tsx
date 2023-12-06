@@ -50,8 +50,10 @@ export async function generateMetadata(
   return {
     title: `${imovel.tipo} - ${imovel.bairro} | ${imovel.codigo}`,
     description: `${imovel.endereco} - ${imovel.numero}`,
+    size: { width: 48, height: 48 },
     openGraph: {
-      images: `${url}${imovel.images[1]}`
+      images: `${url}${imovel.images[1]}`,
+      size: { width: 48, height: 48 },
     }
   }
 }

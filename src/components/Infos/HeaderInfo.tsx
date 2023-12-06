@@ -24,7 +24,7 @@ export function HeaderInfo({ house='', referencia='', endereco='', compartilhar=
             <Home className="w-4 mr-2"/> Saber mais sobre o imóvel
           </button>
         </a>
-        <a href={`https://api.whatsapp.com/send?text=D%C3%AA%20uma%20olhada%20nesse%20im%C3%B3vel%20da%20Esteves%20Im%C3%B3veis%0A${compartilhar}`}>
+        <a href={`https://api.whatsapp.com/send?text=D%C3%AA%20uma%20olhada%20nesse%20im%C3%B3vel%20da%20Esteves%20Im%C3%B3veis%20%7C%20${compartilhar}`}>
           <button className="border border-lime-600 hover:border-lime-700 py-2 px-4 rounded-lg flex items-center">
             <Image src={whatsapp} alt="" className="w-5"/>
           </button>

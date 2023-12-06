@@ -26,7 +26,7 @@ export function CardDescription({valor='', informacao=''}: CardProps) {
                 <Phone className="w-4 mr-2" /> Ligar
             </a>
             <a
-              href={`https://wa.me/5573999973057?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20este%20im%C3%B3vel%0A${informacao}`}
+              href={`https://wa.me/5573999973057?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20este%20im%C3%B3vel%20%7C%20${informacao}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg flex justify-center items-center"
