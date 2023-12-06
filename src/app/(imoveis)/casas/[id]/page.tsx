@@ -1,9 +1,10 @@
+import Image from "next/image";
+
 import Navbar from "@/components/navbar/Index"
 import { Infos } from '@/components/Infos/Index';
 import { Description } from "@/components/description/Index";
 import { Ajuda } from "@/components/Ajuda";
 import { Footer } from "@/components/Footer";
-import Image from "next/image";
 
 export interface Imovel {
   id: number
@@ -35,6 +36,27 @@ async function getImovel(id: string): Promise<Imovel> {
   const data = await res.json()
   return data
 }
+
+export async function generateMetadata(
+  {
+    params: { id },
+    }: {
+      params: { id: string },
+    }
+) {
+  const imovel = await getImovel(id)
+  const url: string = 'https://esteves-db.vercel.app'
+
+  return {
+    title: `${imovel.tipo} - ${imovel.bairro} | ${imovel.codigo}`,
+    description: `${imovel.endereco} - ${imovel.numero}`,
+    openGraph: {
+      images: `${url}${imovel.images[1]}`
+    }
+  }
+}
+
+
 
 export default async function Casa(
   {

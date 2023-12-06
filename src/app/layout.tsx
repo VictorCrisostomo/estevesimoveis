@@ -7,6 +7,10 @@ const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat
 export const metadata: Metadata = {
   title: 'Esteves Imóveis',
   description: 'Mais qualidade de vida para a sua familia!',
+  robots: {
+    follow: true,
+    index: true,
+  }
 }
 
 export default function RootLayout({
