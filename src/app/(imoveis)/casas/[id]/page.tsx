@@ -78,7 +78,7 @@ export default async function Casa(
         house={imovel.tipo}
         referencia={imovel.codigo}
         endereco={`${imovel.endereco}, nº${imovel.numero} - ${imovel.bairro}`}
-        compartilhar=''
+        compartilhar={`https://estevesimoveis.com/casas/${imovel.id}`}
       />
       <Infos.Caroussel>
         <Infos.Image className="relative w-[390px] h-[293px] md:w-[510px] md:h-96">
@@ -122,7 +122,7 @@ export default async function Casa(
         </Description.Text>
         <Description.Card
           valor={imovel.valor}
-          informacao=""
+          informacao={`https://estevesimoveis.com/casas/${imovel.id}`}
           />
       </Description.Root>
 
