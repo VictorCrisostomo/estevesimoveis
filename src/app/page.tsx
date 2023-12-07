@@ -90,10 +90,12 @@ export default function Home() {
         <div className="pt-10 mx-8 md:mx-32">
           <h2 className="text-xl font-semibold text-center text-zinc-700">Quem somos?</h2>
           <br />
-          <p className="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+          <p className="text-center">A Esteves Imóveis atua no ramo imobiliário há mais de 10 anos, é uma empresa especializada na administração de locações, intermediação de compra e venda de imóveis residenciais, comerciais, rurais e industriais, documentação e avaliação de imóveis e tem como diferencial o atendimento personalizado e exclusivo a seus clientes.</p>
         </div>
         <div className="flex justify-center mt-10">
-          <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
+          <Link href={"./quem-somos"}>
+            <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-24 md:px-4 rounded">Ver mais</button>
+          </Link>
         </div>
 
         <div className="flex items-center justify-center py-10 gap-10">
@@ -107,7 +109,6 @@ export default function Home() {
                 <p className="text-sm text-center">Faça uma simulação de crédito para a compra do seu novo imóvel.</p>
                 <div className="flex justify-center">
                   <SimulacaoModals />
-                  {/* <button className="bg-indigo-700 hover:bg-indigo-500 text-white py-2 px-4 rounded text-xs">Simular financiamento</button> */}
                 </div>
               </div>
             </div>
