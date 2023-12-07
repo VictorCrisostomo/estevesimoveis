@@ -4,7 +4,7 @@ export function ComercialGroup() {
   return(
     <section className="py-10 md:px-24 md:py-20">
       <div className="mx-6">
-        <p className="text-zinc-800 text-xl font-semibold text-center md:text-left pb-5">Imóveis Rurais</p>
+        <p className="text-zinc-800 text-xl font-semibold text-center md:text-left pb-5">Imóveis comerciais</p>
       </div>
       <div className="py-20 px-6 flex flex-col items-center justify-center gap-5">
         <p className="text-5xl font-bold">:(</p>
