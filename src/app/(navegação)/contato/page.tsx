@@ -12,9 +12,9 @@ export default function Contato() {
     <main className="text-zinc-600">
       <Navbar />
       <div className="mx-5 md:mx-32 my-8 flex flex-col justify-center">
-        <p className="text-2xl font-semibold text-center text-zinc-700">Lorem Ipsun</p>
+        <p className="text-2xl font-semibold text-center text-zinc-700">Contato</p>
         <br />
-        <p className="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ad nemo dolor molestiae explicabo, et harum odit accusantium ratione voluptas impedit nulla magni nam perspiciatis? Soluta delectus dicta ratione natus.</p>
+        <p className="text-center">Esta com alguma dificuldade ou gostaria de receber mais informações sobre algum dos nossos imoveis ou serviços? Entre em contato conosco através dos números de telefones abaixo. Também não deixe de nos seguir em nossas redes sociais abaixo!</p>
       </div>
 
       <div className="md:mx-32 md:my-16 grid grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-10 md:gap-0">
