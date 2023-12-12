@@ -17,7 +17,9 @@ type Todo = {
 }
 
 async function getData(): Promise<Todo[]> {
-  const res = await fetch("https://imoveis-db.vercel.app/casas")
+  const res = await fetch("https://imoveis-db.vercel.app/casas", {
+    cache: "no-store"
+  })
 
   if (!res.ok) {
     throw new Error("Falha ao carregar")

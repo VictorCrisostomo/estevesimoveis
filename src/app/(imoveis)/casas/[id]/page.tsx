@@ -27,7 +27,9 @@ export interface Imovel {
 }
 
 async function getImovel(id: string): Promise<Imovel> {
-  const res = await fetch(`https://imoveis-db.vercel.app/casas/${id}`)
+  const res = await fetch(`https://imoveis-db.vercel.app/casas/${id}`, {
+    cache: "no-store"
+  })
   
   if (!res.ok) {
     throw new Error("Falha ao carregar")
