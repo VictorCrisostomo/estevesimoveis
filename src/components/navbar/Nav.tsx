@@ -32,9 +32,9 @@ export function NavBar() {
         <Link href={"../contato"}>
           <p className="hover:text-indigo-700 pb-3 md:pb-0">Contato</p>
         </Link>
-        <Link href={"../blog"}>
+        {/* <Link href={"../blog"}>
           <p className="hover:text-indigo-700 pb-3 md:pb-0">Blog</p>
-        </Link>
+        </Link> */}
       </Navbar.Collapse>
     </Navbar>
   )
