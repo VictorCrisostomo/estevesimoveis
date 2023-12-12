@@ -17,7 +17,7 @@ export function Cards() {
                 <Image src={casa} alt='' quality={60} className="max-w-xs transition duration-300 ease-in-out hover:scale-110" />
               </div>
               <div className="w-48 h-16 bg-zinc-100 rounded-b-xl">
-                <p className="ml-5 pt-2 text-base">Imóveis Residenciais</p>
+                <p className="ml-5 pt-2 text-base">Imóveis <br/>Residenciais</p>
               </div>
             </div>
           </Link>
